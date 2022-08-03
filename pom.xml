@@ -9,7 +9,7 @@
 
   <name>runforce</name>
   <description>Salesforce platform type stubs</description>
-  <url>https://github.com/nawforce/runforce</url>
+  <url>https://github.com/apex-dev-tools/p-types</url>
   <licenses>
     <license>
       <name>BSD-3-Clause</name>
@@ -18,14 +18,14 @@
   </licenses>
   <developers>
     <developer>
-      <name>Kevin Jones</name>
-      <email>nawforce@gmail.com</email>
+      <name>Apex Dev Tools Team</name>
+      <email>apexdevtools@gmail.com</email>
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:git://github.com/nawforce/runforce.git</connection>
-    <developerConnection>scm:git:git://github.com/nawforce/runforce.git</developerConnection>
-    <url>http://github.com/nawforce/runforce.git</url>
+    <connection>scm:git:git://github.com/apex-dev-tools/p-types.git</connection>
+    <developerConnection>scm:git:git://github.com/apex-dev-tools/p-types.git</developerConnection>
+    <url>http://github.com/apex-dev-tools/p-types.git</url>
   </scm>
 
   <!-- https://central.sonatype.org/pages/ossrh-guide.html -->
