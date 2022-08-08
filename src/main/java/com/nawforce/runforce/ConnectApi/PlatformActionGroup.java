@@ -14,7 +14,6 @@
 
 package com.nawforce.runforce.ConnectApi;
 
-import com.nawforce.runforce.SObjects.PlatformAction;
 import com.nawforce.runforce.System.Boolean;
 import com.nawforce.runforce.System.Double;
 import com.nawforce.runforce.System.Integer;
