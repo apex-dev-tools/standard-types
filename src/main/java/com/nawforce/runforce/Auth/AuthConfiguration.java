@@ -14,10 +14,10 @@
 
 package com.nawforce.runforce.Auth;
 
-import com.nawforce.runforce.SObjects.AuthConfig;
-import com.nawforce.runforce.SObjects.AuthConfigProviders;
-import com.nawforce.runforce.SObjects.AuthProvider;
-import com.nawforce.runforce.SObjects.SamlSsoConfig;
+import com.nawforce.runforce.SObjectStubs.AuthConfig;
+import com.nawforce.runforce.SObjectStubs.AuthConfigProviders;
+import com.nawforce.runforce.SObjectStubs.AuthProvider;
+import com.nawforce.runforce.SObjectStubs.SamlSsoConfig;
 import com.nawforce.runforce.System.Boolean;
 import com.nawforce.runforce.System.Id;
 import com.nawforce.runforce.System.List;

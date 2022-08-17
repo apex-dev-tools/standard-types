@@ -16,7 +16,7 @@ package com.nawforce.runforce.System;
 
 import com.nawforce.runforce.Auth.VerificationMethod;
 import com.nawforce.runforce.Auth.VerificationResult;
-import com.nawforce.runforce.SObjects.User;
+import com.nawforce.runforce.SObjectStubs.User;
 
 @SuppressWarnings("unused")
 public class UserManagement {

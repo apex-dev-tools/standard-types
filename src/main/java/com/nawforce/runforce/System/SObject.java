@@ -16,7 +16,7 @@ package com.nawforce.runforce.System;
 
 import com.nawforce.runforce.Database.DMLOptions;
 import com.nawforce.runforce.Database.Error;
-import com.nawforce.runforce.SObjects.UserRecordAccess;
+import com.nawforce.runforce.SObjectStubs.UserRecordAccess;
 import com.nawforce.runforce.Schema.SObjectField;
 import com.nawforce.runforce.Schema.SObjectType;
 

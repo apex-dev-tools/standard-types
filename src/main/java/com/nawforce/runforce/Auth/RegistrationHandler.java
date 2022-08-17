@@ -14,7 +14,7 @@
 
 package com.nawforce.runforce.Auth;
 
-import com.nawforce.runforce.SObjects.User;
+import com.nawforce.runforce.SObjectStubs.User;
 import com.nawforce.runforce.System.Id;
 
 @SuppressWarnings("unused")

@@ -14,7 +14,7 @@
 
 package com.nawforce.runforce.ApexPages;
 
-import com.nawforce.runforce.SObjects.Idea;
+import com.nawforce.runforce.SObjectStubs.Idea;
 import com.nawforce.runforce.System.Boolean;
 import com.nawforce.runforce.System.Integer;
 import com.nawforce.runforce.System.String;

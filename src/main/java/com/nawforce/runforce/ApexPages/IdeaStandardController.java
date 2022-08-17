@@ -14,7 +14,7 @@
 
 package com.nawforce.runforce.ApexPages;
 
-import com.nawforce.runforce.SObjects.IdeaComment;
+import com.nawforce.runforce.SObjectStubs.IdeaComment;
 import com.nawforce.runforce.System.List;
 import com.nawforce.runforce.System.PageReference;
 import com.nawforce.runforce.System.SObject;

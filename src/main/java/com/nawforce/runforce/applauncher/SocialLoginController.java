@@ -14,8 +14,8 @@
 
 package com.nawforce.runforce.applauncher;
 
-import com.nawforce.runforce.SObjects.AuthProvider;
-import com.nawforce.runforce.SObjects.SamlSsoConfig;
+import com.nawforce.runforce.SObjectStubs.AuthProvider;
+import com.nawforce.runforce.SObjectStubs.SamlSsoConfig;
 import com.nawforce.runforce.System.List;
 import com.nawforce.runforce.System.String;
 
