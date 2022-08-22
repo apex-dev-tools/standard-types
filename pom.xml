@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.github.apex-dev-tools</groupId>
-  <artifactId>runforce</artifactId>
+  <artifactId>standard-types</artifactId>
   <version>55.0.0</version>
   <packaging>jar</packaging>
 
-  <name>runforce</name>
+  <name>standard-types</name>
   <description>Salesforce platform type stubs</description>
-  <url>https://github.com/apex-dev-tools/p-types</url>
+  <url>https://github.com/apex-dev-tools/standard-types</url>
   <licenses>
     <license>
       <name>BSD-3-Clause</name>
@@ -23,9 +23,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:git://github.com/apex-dev-tools/p-types.git</connection>
-    <developerConnection>scm:git:git://github.com/apex-dev-tools/p-types.git</developerConnection>
-    <url>http://github.com/apex-dev-tools/p-types.git</url>
+    <connection>scm:git:git://github.com/apex-dev-tools/standard-types.git</connection>
+    <developerConnection>scm:git:git://github.com/apex-dev-tools/standard-types.git</developerConnection>
+    <url>http://github.com/apex-dev-tools/standard-types.git</url>
   </scm>
 
   <!-- https://central.sonatype.org/pages/ossrh-guide.html -->
