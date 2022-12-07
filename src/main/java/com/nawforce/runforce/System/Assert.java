@@ -6,9 +6,6 @@ package com.nawforce.runforce.System;
 
 @SuppressWarnings("unused")
 public class Assert {
-    public Assert() {throw new java.lang.UnsupportedOperationException();}
-
-    public Object clone() {throw new java.lang.UnsupportedOperationException();}
     public static void areEqual(Object expected, Object actual) {throw new java.lang.UnsupportedOperationException();}
     public static void areEqual(Object expected, Object actual, String msg) {throw new java.lang.UnsupportedOperationException();}
     public static void areNotEqual(Object notExpected, Object actual) {throw new java.lang.UnsupportedOperationException();}
