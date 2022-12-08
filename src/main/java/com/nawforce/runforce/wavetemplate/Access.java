@@ -4,6 +4,7 @@
 
 package com.nawforce.runforce.wavetemplate;
 
+import com.nawforce.runforce.System.Boolean;
 import com.nawforce.runforce.System.Integer;
 import com.nawforce.runforce.System.List;
 import com.nawforce.runforce.System.String;
