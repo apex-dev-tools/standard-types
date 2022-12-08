@@ -8,7 +8,7 @@ import com.nawforce.runforce.System.Exception;
 import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
-public class TemplateApexException {
+public class TemplateApexException extends Exception {
     public TemplateApexException() {throw new java.lang.UnsupportedOperationException();}
     public TemplateApexException(Exception param1) {throw new java.lang.UnsupportedOperationException();}
     public TemplateApexException(String msg) {throw new java.lang.UnsupportedOperationException();}

@@ -8,7 +8,7 @@ import com.nawforce.runforce.System.Exception;
 import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
-public class TemplateInterruptException {
+public class TemplateInterruptException extends Exception {
     public TemplateInterruptException() {throw new java.lang.UnsupportedOperationException();}
     public TemplateInterruptException(Exception param1) {throw new java.lang.UnsupportedOperationException();}
     public TemplateInterruptException(String msg) {throw new java.lang.UnsupportedOperationException();}
