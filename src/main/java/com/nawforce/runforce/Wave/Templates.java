@@ -5,6 +5,7 @@
 package com.nawforce.runforce.Wave;
 
 import com.nawforce.runforce.System.Map;
+import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public class Templates {
