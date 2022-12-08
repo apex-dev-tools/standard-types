@@ -4,7 +4,7 @@
 
   <groupId>io.github.apex-dev-tools</groupId>
   <artifactId>standard-types</artifactId>
-  <version>55.0.0</version>
+  <version>56.0.0</version>
   <packaging>jar</packaging>
 
   <name>standard-types</name>
