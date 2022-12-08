@@ -4,7 +4,9 @@
 
 package com.nawforce.runforce.wavetemplate;
 
+import com.nawforce.runforce.System.Boolean;
 import com.nawforce.runforce.System.Set;
+import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public class VariableDefinition {

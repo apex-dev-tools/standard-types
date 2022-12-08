@@ -4,6 +4,8 @@
 
 package com.nawforce.runforce.wavetemplate;
 
+import com.nawforce.runforce.System.String;
+
 @SuppressWarnings("unused")
 public class ReleaseInfo {
     public static String getTemplateVersion() {throw new java.lang.UnsupportedOperationException();}
