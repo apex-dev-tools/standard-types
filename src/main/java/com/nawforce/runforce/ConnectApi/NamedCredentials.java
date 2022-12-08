@@ -4,6 +4,8 @@
 
 package com.nawforce.runforce.ConnectApi;
 
+import com.nawforce.runforce.System.String;
+
 @SuppressWarnings("unused")
 public class NamedCredentials {
     public static Credential createCredential(CredentialInput requestBody) {throw new java.lang.UnsupportedOperationException();}
