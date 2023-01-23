@@ -45,7 +45,7 @@ public class SObject {
 	public SObject getInstance(String id) {throw new java.lang.UnsupportedOperationException();}
 	public DMLOptions getOptions() {throw new java.lang.UnsupportedOperationException();}
 	public SObject getOrgDefaults() {throw new java.lang.UnsupportedOperationException();}
-	public Map<String, SObject> getPopulatedFieldsAsMap() {throw new java.lang.UnsupportedOperationException();}
+	public Map<String, Object> getPopulatedFieldsAsMap() {throw new java.lang.UnsupportedOperationException();}
 	public String getQuickActionName() {throw new java.lang.UnsupportedOperationException();}
 	public SObject getSObject(SObjectField field) {throw new java.lang.UnsupportedOperationException();}
 	public SObject getSObject(String field) {throw new java.lang.UnsupportedOperationException();}
