@@ -105,6 +105,7 @@ public class DescribeFieldResult {
 	public Integer getRelationshipOrder() {throw new java.lang.UnsupportedOperationException();}
 	public Integer getScale() {throw new java.lang.UnsupportedOperationException();}
 	public SoapType getSoapType() {throw new java.lang.UnsupportedOperationException();}
+	public SObjectType getSObjectType() {throw new java.lang.UnsupportedOperationException();}
 	public SObjectField getSobjectField() {throw new java.lang.UnsupportedOperationException();}
 	public DisplayType getType() {throw new java.lang.UnsupportedOperationException();}
 	public Boolean isAccessible() {throw new java.lang.UnsupportedOperationException();}

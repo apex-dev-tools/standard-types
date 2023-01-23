@@ -29,6 +29,7 @@ public class System {
 	public static void debug(Object o) {throw new java.lang.UnsupportedOperationException();}
 	public static void debug(Object logLevel, Object o) {throw new java.lang.UnsupportedOperationException();}
 	public static Id enqueueJob(Object queueable) {throw new java.lang.UnsupportedOperationException();}
+	public static Id enqueueJob(Object queueable, Integer delay) {throw new java.lang.UnsupportedOperationException();}
 	public static Boolean equals$(Object left, Object right) {throw new java.lang.UnsupportedOperationException();}
 	public static ApplicationReadWriteMode getApplicationReadWriteMode() {throw new java.lang.UnsupportedOperationException();}
 	public static Integer hashCode$(Object obj) {throw new java.lang.UnsupportedOperationException();}

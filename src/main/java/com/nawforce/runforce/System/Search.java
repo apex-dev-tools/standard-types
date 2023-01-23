@@ -20,6 +20,9 @@ import com.nawforce.runforce.Search.SuggestionResults;
 @SuppressWarnings("unused")
 public class Search {
 	public static SearchResults find(String searchQuery) {throw new java.lang.UnsupportedOperationException();}
+	public static SearchResults find(String searchQuery, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}
 	public static List<List<SObject>> query(String searchQuery) {throw new java.lang.UnsupportedOperationException();}
+	public static List<List<SObject>> query(String searchQuery, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}
 	public static SuggestionResults suggest(String searchQuery, String sObjectType, Object options) {throw new java.lang.UnsupportedOperationException();}
+	public static SuggestionResults suggest(String searchQuery, String sObjectType, Object options, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}
 }

@@ -47,5 +47,6 @@ public class Test {
 	public static void testInstall(InstallHandler script, Version version) {throw new java.lang.UnsupportedOperationException();}
 	public static void testInstall(InstallHandler script, Version version, Boolean isPush) {throw new java.lang.UnsupportedOperationException();}
 	public static void testSandboxPostCopyScript(SandboxPostCopy script, Id organizationId, Id sandboxId, String sandboxName) {throw new java.lang.UnsupportedOperationException();}
+	public static void testSandboxPostCopyScript(SandboxPostCopy script, Id organizationId, Id sandboxId, String sandboxName, Boolean isRunAsAutoProcUser) {throw new java.lang.UnsupportedOperationException();}
 	public static void testUninstall(UninstallHandler script) {throw new java.lang.UnsupportedOperationException();}
 }
