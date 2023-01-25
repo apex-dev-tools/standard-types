@@ -16,10 +16,12 @@ package com.nawforce.runforce.Wave;
 
 import com.nawforce.runforce.System.Boolean;
 import com.nawforce.runforce.System.Integer;
+import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public class ProjectionType {
 	public Boolean equals$(Object obj) {throw new java.lang.UnsupportedOperationException();}
 	public Integer hashCode$() {throw new java.lang.UnsupportedOperationException();}
-	public Integer ordinal() {throw new java.lang.UnsupportedOperationException();}
+	public Integer ordinal$() {throw new java.lang.UnsupportedOperationException();}
+	public ProjectionType valueOf(String str) {throw new java.lang.UnsupportedOperationException();}
 }
