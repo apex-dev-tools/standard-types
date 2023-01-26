@@ -14,6 +14,13 @@
 
 package com.nawforce.runforce.Internal;
 
+import com.nawforce.runforce.System.Boolean;
+import com.nawforce.runforce.System.Integer;
+import com.nawforce.runforce.System.String;
+
 @SuppressWarnings("unused")
 public interface Interface$ {
+    Integer hashCode$();
+    String toString$();
+    Boolean equals$(Object other);
 }
