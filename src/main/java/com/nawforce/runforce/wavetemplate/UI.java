@@ -8,5 +8,5 @@ import com.nawforce.runforce.System.List;
 
 @SuppressWarnings("unused")
 public class UI {
-    public static List<UIPage> getPages() {throw new java.lang.UnsupportedOperationException();}
+    public List<UIPage> getPages() {throw new java.lang.UnsupportedOperationException();}
 }
