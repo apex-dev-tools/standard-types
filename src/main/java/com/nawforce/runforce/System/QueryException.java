@@ -20,4 +20,6 @@ public class QueryException extends Exception {
 	public QueryException(Exception param1) {throw new java.lang.UnsupportedOperationException();}
 	public QueryException(String param1) {throw new java.lang.UnsupportedOperationException();}
 	public QueryException(String param1, Exception param2) {throw new java.lang.UnsupportedOperationException();}
+
+	public Map<String,Set<String>> getInaccessibleFields() {throw new java.lang.UnsupportedOperationException();}	
 }
