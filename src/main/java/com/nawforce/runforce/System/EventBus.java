@@ -15,10 +15,16 @@
 package com.nawforce.runforce.System;
 
 import com.nawforce.runforce.Database.SaveResult;
+import com.nawforce.runforce.eventbus.EventPublishFailureCallback;
+import com.nawforce.runforce.eventbus.EventPublishSuccessCallback;
 
 @SuppressWarnings("unused")
 public class EventBus {
-	public static String getOperationId(Object result)  {throw new java.lang.UnsupportedOperationException();}
-	public static List<SaveResult> publish(List<SObject> sobjects) {throw new java.lang.UnsupportedOperationException();}
-	public static SaveResult publish(SObject sobject) {throw new java.lang.UnsupportedOperationException();}
+  public static String getOperationId(Object result)  {throw new java.lang.UnsupportedOperationException();}
+  public static List<SaveResult> publish(List<SObject> sobjects) {throw new java.lang.UnsupportedOperationException();}
+  public static SaveResult publish(SObject sobject) {throw new java.lang.UnsupportedOperationException();}
+  public static List<SaveResult> publish(List<SObject> sobjects, EventPublishFailureCallback cb) {throw new java.lang.UnsupportedOperationException();}
+  public static SaveResult publish(SObject sobject, EventPublishFailureCallback cb) {throw new java.lang.UnsupportedOperationException();}
+  public static List<SaveResult> publish(List<SObject> sobjects, EventPublishSuccessCallback cb) {throw new java.lang.UnsupportedOperationException();}
+  public static SaveResult publish(SObject sobject, EventPublishSuccessCallback cb) {throw new java.lang.UnsupportedOperationException();}
 }

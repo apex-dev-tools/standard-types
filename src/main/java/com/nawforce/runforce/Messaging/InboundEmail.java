@@ -21,6 +21,7 @@ import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public class InboundEmail {
+	public AuthenticationResult[] authenticationResults;
 	public List<BinaryAttachment> binaryAttachments;
 	public List<String> ccAddresses;
 	public String fromAddress;
@@ -39,6 +40,23 @@ public class InboundEmail {
 	public List<String> toAddresses;
 
 	public InboundEmail() {throw new java.lang.UnsupportedOperationException();}
+
+	public static class AuthenticationResultField
+	{
+		public String name;
+		public String value;
+
+		public AuthenticationResultField() {throw new java.lang.UnsupportedOperationException();}
+	}
+
+	public static class AuthenticationResult
+	{
+		public AuthenticationResultField[] authenticationResultFields;
+		public String method;
+		public String result;
+
+		public AuthenticationResult() {throw new java.lang.UnsupportedOperationException();}
+	}
 
 	public static class BinaryAttachment
 	{
