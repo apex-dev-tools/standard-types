@@ -18,4 +18,5 @@ package com.nawforce.runforce.System;
 public class Security {
     public static SObjectAccessDecision stripInaccessible(AccessType accessCheckType, List<SObject> sourceRecords, Boolean enforceRootObjectCRUD) {throw new java.lang.UnsupportedOperationException();}
     public static SObjectAccessDecision stripInaccessible(AccessType accessCheckType, List<SObject> sourceRecords) {throw new java.lang.UnsupportedOperationException();}
+    public static SObjectAccessDecision stripInaccessible(AccessType accessCheckType, List<SObject> sourceRecords, Id permissionSetId) {throw new java.lang.UnsupportedOperationException();}
 }
