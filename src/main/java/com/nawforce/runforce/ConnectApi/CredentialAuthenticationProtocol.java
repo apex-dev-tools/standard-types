@@ -13,6 +13,7 @@ import com.nawforce.runforce.System.String;
 public enum CredentialAuthenticationProtocol {
     AwsSv4,
     Custom,
+    Jwt,
     OAuth;
 
     public Boolean equals$(Object obj) {throw new java.lang.UnsupportedOperationException();}

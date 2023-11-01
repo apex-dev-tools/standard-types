@@ -13,11 +13,17 @@ import com.nawforce.runforce.System.String;
 @SuppressWarnings("unused")
 public class ExternalCredential {
     public CredentialAuthenticationProtocol authenticationProtocol;
+    public CredentialAuthenticationProtocolVariant authenticationProtocolVariant;
     public CredentialAuthenticationStatus authenticationStatus;
+    public String createdByNamespace;
+    public List<CredentialCustomHeader> customHeaders;
     public String developerName;
+    public String id;
     public String masterLabel;
+    public List<ExternalCredentialParameter> parameters;
     public List<ExternalCredentialPrincipal> principals;
     public List<NamedCredential> relatedNamedCredentials;
+    public String url;
 
     public ExternalCredential() {throw new java.lang.UnsupportedOperationException();}
 

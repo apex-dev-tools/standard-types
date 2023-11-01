@@ -11,6 +11,7 @@ import com.nawforce.runforce.System.String;
 @SuppressWarnings("unused")
 public class CredentialValueInput {
     public Boolean encrypted;
+    public Integer revision;
     public String value;
 
     public CredentialValueInput() {throw new java.lang.UnsupportedOperationException();}
