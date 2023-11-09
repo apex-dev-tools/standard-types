@@ -18,7 +18,9 @@ import com.nawforce.runforce.Database.SaveResult;
 
 @SuppressWarnings("unused")
 public class EventBus {
-	public static String getOperationId(Object result)  {throw new java.lang.UnsupportedOperationException();}
-	public static List<SaveResult> publish(List<SObject> sobjects) {throw new java.lang.UnsupportedOperationException();}
-	public static SaveResult publish(SObject sobject) {throw new java.lang.UnsupportedOperationException();}
+  public static String getOperationId(Object result)  {throw new java.lang.UnsupportedOperationException();}
+  public static List<SaveResult> publish(List<SObject> sobjects) {throw new java.lang.UnsupportedOperationException();}
+  public static SaveResult publish(SObject sobject) {throw new java.lang.UnsupportedOperationException();}
+  public static List<SaveResult> publish(List<SObject> sobjects, Object cb) {throw new java.lang.UnsupportedOperationException();}
+  public static SaveResult publish(SObject sobject, Object cb) {throw new java.lang.UnsupportedOperationException();}
 }

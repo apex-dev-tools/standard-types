@@ -5,7 +5,11 @@
 package com.nawforce.runforce.System;
 
 @SuppressWarnings("unused")
-public enum AccessLevel {
-    SYSTEM_MODE,
-    USER_MODE
+public class AccessLevel {
+    public AccessLevel SYSTEM_MODE;
+    public AccessLevel USER_MODE;
+
+    private AccessLevel() {throw new java.lang.UnsupportedOperationException();}
+
+    public AccessLevel withPermissionSetId(String permissionSetId) {throw new java.lang.UnsupportedOperationException();}
 }

@@ -39,6 +39,8 @@ public class AuthConfiguration {
   public String getFooterText() {throw new java.lang.UnsupportedOperationException();}
   public String getForgotPasswordUrl() {throw new java.lang.UnsupportedOperationException();}
   public Boolean getHeadlessForgotPasswordEnabled() {throw new java.lang.UnsupportedOperationException();}
+  public Boolean getHeadlessPasswordlessLoginEnabled() {throw new java.lang.UnsupportedOperationException();}
+  public Boolean getHeadlessRegistrationEnabled() {throw new java.lang.UnsupportedOperationException();}
   public String getLogoUrl() {throw new java.lang.UnsupportedOperationException();}
   public String getLoginRightFrameUrl() {throw new java.lang.UnsupportedOperationException();}
   public List<SamlSsoConfig> getSamlProviders() {throw new java.lang.UnsupportedOperationException();}

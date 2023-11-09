@@ -14,7 +14,7 @@
 package com.nawforce.runforce.System;
 
 @SuppressWarnings("unused")
-public class Set<T> {
+public class Set<T> implements Iterable<T> {
     public Set() {throw new java.lang.UnsupportedOperationException();}
     public Set(Set<T> setToCopy) {throw new java.lang.UnsupportedOperationException();}
     public Set(List<T> listToCopy) {throw new java.lang.UnsupportedOperationException();}

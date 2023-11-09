@@ -12,6 +12,7 @@ import com.nawforce.runforce.System.String;
 @SuppressWarnings("unused")
 public class CredentialInput {
     public CredentialAuthenticationProtocol authenticationProtocol;
+    public CredentialAuthenticationProtocolVariant authenticationProtocolVariant;
     public Map<String, CredentialValueInput> credentials;
     public String externalCredential;
     public String principalName;

@@ -16,7 +16,8 @@ package com.nawforce.runforce.eventbus;
 
 @SuppressWarnings("unused")
 public class TestBroker {
-	public TestBroker() {throw new java.lang.UnsupportedOperationException();}
+  public TestBroker() {throw new java.lang.UnsupportedOperationException();}
 
-	public void deliver() {throw new java.lang.UnsupportedOperationException();}
+  public void deliver() {throw new java.lang.UnsupportedOperationException();}
+  public void fail() {throw new java.lang.UnsupportedOperationException();}
 }
