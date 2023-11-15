@@ -6,8 +6,8 @@ package com.nawforce.runforce.System;
 
 @SuppressWarnings("unused")
 public class AccessLevel {
-    public AccessLevel SYSTEM_MODE;
-    public AccessLevel USER_MODE;
+    public static AccessLevel SYSTEM_MODE;
+    public static AccessLevel USER_MODE;
 
     private AccessLevel() {throw new java.lang.UnsupportedOperationException();}
 
