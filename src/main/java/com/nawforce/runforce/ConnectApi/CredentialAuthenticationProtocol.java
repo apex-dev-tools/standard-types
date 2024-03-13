@@ -11,6 +11,7 @@ import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public enum CredentialAuthenticationProtocol {
+    Basic,
     AwsSv4,
     Custom,
     Jwt,

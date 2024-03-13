@@ -18,5 +18,6 @@ package com.nawforce.runforce.ConnectApi;
 public enum FeedEntityStatus {
 	Draft,
 	PendingReview,
-	Published
+	Published,
+	Isolated
 }
