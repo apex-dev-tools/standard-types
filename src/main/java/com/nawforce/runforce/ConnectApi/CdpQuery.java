@@ -4,6 +4,9 @@
 
 package com.nawforce.runforce.ConnectApi;
 
+import com.nawforce.runforce.System.Integer;
+import com.nawforce.runforce.System.String;
+
 @SuppressWarnings("unused")
 public class CdpQuery {
   public static CdpQueryMetadataOutput getAllMetadata() {throw new java.lang.UnsupportedOperationException();}
