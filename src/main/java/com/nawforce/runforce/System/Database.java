@@ -119,7 +119,8 @@ public class Database {
 	public static RecordSet$<SObject> query(String query) {throw new java.lang.UnsupportedOperationException();}
 	public static RecordSet$<SObject> query(String query, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}
 	public static RecordSet$<SObject> queryWithBinds(String query, Map<String, Object> bindMap, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}
-	public static void rollback(Savepoint savepoint) {throw new java.lang.UnsupportedOperationException();}
+	public static void releaseSavepoint(Savepoint databaseSavepoint) {throw new java.lang.UnsupportedOperationException();}
+	public static void rollback(Savepoint databaseSavepoint) {throw new java.lang.UnsupportedOperationException();}
 	public static Savepoint setSavepoint() {throw new java.lang.UnsupportedOperationException();}
 	public static UndeleteResult undelete(Id id) {throw new java.lang.UnsupportedOperationException();}
 	public static UndeleteResult undelete(Id id, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}

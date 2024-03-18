@@ -16,6 +16,7 @@ package com.nawforce.runforce.System;
 
 @SuppressWarnings("unused")
 public enum Quiddity {
+  UD,
   ANONYMOUS,
   AURA,
   BATCH_ACS,

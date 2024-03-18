@@ -18,6 +18,7 @@ package com.nawforce.runforce.System;
 public class UserInfo {
 	public UserInfo() {throw new java.lang.UnsupportedOperationException();}
 
+	public static String getCurrentUvid() {throw new java.lang.UnsupportedOperationException();}
 	public static String getDefaultCurrency() {throw new java.lang.UnsupportedOperationException();}
 	public static String getFirstName() {throw new java.lang.UnsupportedOperationException();}
 	public static String getLanguage() {throw new java.lang.UnsupportedOperationException();}

@@ -35,5 +35,6 @@ public enum FeedType {
 	Streams,
 	To,
 	Topics,
-	UserProfile
+	UserProfile,
+	Isolated
 }

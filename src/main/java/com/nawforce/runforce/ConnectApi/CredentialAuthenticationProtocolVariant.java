@@ -8,6 +8,7 @@ package com.nawforce.runforce.ConnectApi;
 public enum CredentialAuthenticationProtocolVariant {
   AwsSv4_STS,
   ClientCredentialsClientSecret,
+  ClientCredentialsClientSecretBasic,
   ClientCredentialsJwtAssertion,
   JwtBearer,
   NoAuthentication,
