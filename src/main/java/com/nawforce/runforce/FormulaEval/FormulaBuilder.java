@@ -4,6 +4,7 @@
 
 package com.nawforce.runforce.FormulaEval;
 
+import com.nawforce.runforce.Schema.SObjectType;
 import com.nawforce.runforce.System.Boolean;
 import com.nawforce.runforce.System.List;
 import com.nawforce.runforce.System.String;
@@ -18,4 +19,5 @@ public class FormulaBuilder {
   public FormulaBuilder withGlobalVariables(List<FormulaGlobal> formulaGlobals) {throw new java.lang.UnsupportedOperationException();}
   public FormulaBuilder withReturnType(FormulaReturnType returnType) {throw new java.lang.UnsupportedOperationException();}
   public FormulaBuilder withType(Type contextType) {throw new java.lang.UnsupportedOperationException();}
+  public FormulaBuilder withType(SObjectType contextSObjectType) {throw new java.lang.UnsupportedOperationException();}
 }
