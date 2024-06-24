@@ -5,6 +5,7 @@
 package com.nawforce.runforce.Context;
 
 import com.nawforce.runforce.System.Map;
+import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public class IndustriesContext {

@@ -4,6 +4,10 @@
 
 package com.nawforce.runforce.DataSource;
 
+import com.nawforce.runforce.System.Boolean;
+import com.nawforce.runforce.System.Integer;
+import com.nawforce.runforce.System.String;
+
 @SuppressWarnings("unused")
 public class UpsertResult {
   public String errorMessage;

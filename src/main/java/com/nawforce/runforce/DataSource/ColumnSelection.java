@@ -4,6 +4,8 @@
 
 package com.nawforce.runforce.DataSource;
 
+import com.nawforce.runforce.System.String;
+
 @SuppressWarnings("unused")
 public class ColumnSelection {
   public QueryAggregation aggregation;

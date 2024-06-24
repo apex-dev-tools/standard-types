@@ -4,6 +4,7 @@
 
 package com.nawforce.runforce.Database;
 
+import com.nawforce.runforce.System.Integer;
 import com.nawforce.runforce.System.List;
 import com.nawforce.runforce.System.SObject;
 
