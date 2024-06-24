@@ -14,7 +14,10 @@
 
 package com.nawforce.runforce.System;
 
+import com.nawforce.runforce.FormulaEval.FormulaBuilder;
+
 @SuppressWarnings("unused")
 public class Formula {
+  public static FormulaBuilder builder() {throw new java.lang.UnsupportedOperationException();}
   public static List<FormulaRecalcResult> recalculateFormulas(List<SObject> sobjects) {throw new java.lang.UnsupportedOperationException();}
 }

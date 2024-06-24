@@ -16,14 +16,18 @@ package com.nawforce.runforce.System;
 
 @SuppressWarnings("unused")
 public class Limits {
-	public static Integer getAggregateQueries() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getAggregateQueries() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitAggregateQueries() {throw new java.lang.UnsupportedOperationException();}
-	public static Integer getAsyncCalls() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getApexCursorRows() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getLimitApexCursorRows() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getFetchCallsOnApexCursor() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getLimitFetchCallsOnApexCursor() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getAsyncCalls() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitAsyncCalls() {throw new java.lang.UnsupportedOperationException();}
-	public static Integer getCallouts() {throw new java.lang.UnsupportedOperationException();}
-	public static Integer getChildRelationshipsDescribes() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getCallouts() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getChildRelationshipsDescribes() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitCallouts() {throw new java.lang.UnsupportedOperationException();}
-	public static Integer getCpuTime() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getCpuTime() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitCpuTime() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getDmlRows() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitDmlRows() {throw new java.lang.UnsupportedOperationException();}
@@ -62,13 +66,13 @@ public class Limits {
   public static Integer getDatabaseTime() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitDatabaseTime() {throw new java.lang.UnsupportedOperationException();}
 
-	public static Integer getFieldSetsDescribes() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getFieldSetsDescribes() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitFieldSetsDescribes() {throw new java.lang.UnsupportedOperationException();}
 
-	public static Integer getFieldsDescribes() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getFieldsDescribes() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitFieldsDescribes() {throw new java.lang.UnsupportedOperationException();}
 
-	public static Integer getLimitChildRelationshipsDescribes() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getLimitChildRelationshipsDescribes() {throw new java.lang.UnsupportedOperationException();}
 
   public static Integer getPicklistDescribes() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitPicklistDescribes() {throw new java.lang.UnsupportedOperationException();}
@@ -77,6 +81,6 @@ public class Limits {
   public static Integer getLimitRecordTypesDescribes() {throw new java.lang.UnsupportedOperationException();}
 
   public static Integer getScriptStatements() {throw new java.lang.UnsupportedOperationException();}
-	public static Integer getLimitScriptStatements() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getLimitScriptStatements() {throw new java.lang.UnsupportedOperationException();}
 }
 
