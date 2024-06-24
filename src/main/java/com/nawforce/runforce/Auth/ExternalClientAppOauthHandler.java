@@ -7,6 +7,7 @@ package com.nawforce.runforce.Auth;
 import com.nawforce.runforce.System.Boolean;
 import com.nawforce.runforce.System.Id;
 import com.nawforce.runforce.System.Map;
+import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public class ExternalClientAppOauthHandler {

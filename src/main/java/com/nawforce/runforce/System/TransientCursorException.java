@@ -5,7 +5,7 @@
 package com.nawforce.runforce.System;
 
 @SuppressWarnings("unused")
-public class TransientCursorException {
+public class TransientCursorException extends Exception {
   public TransientCursorException() {throw new java.lang.UnsupportedOperationException();}
   public TransientCursorException(Exception param1) {throw new java.lang.UnsupportedOperationException();}
   public TransientCursorException(String param1) {throw new java.lang.UnsupportedOperationException();}
