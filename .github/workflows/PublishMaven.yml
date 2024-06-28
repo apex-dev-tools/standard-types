@@ -25,7 +25,7 @@ jobs:
 
       - name: Publish package
         run: |
-          mvn -X --batch-mode deploy
+          mvn --batch-mode deploy
         env:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           MAVEN_TOKEN: ${{ secrets.OSSRH_TOKEN }}
