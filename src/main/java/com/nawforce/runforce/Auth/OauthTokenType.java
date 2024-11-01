@@ -8,5 +8,6 @@ package com.nawforce.runforce.Auth;
 public enum OauthTokenType {
   ACCESS_TOKEN,
   DELETE_TOKEN,
-  REFRESH_TOKEN
+  REFRESH_TOKEN,
+  ORG_JWT
 }
