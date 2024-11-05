@@ -47,6 +47,6 @@ This template lets you type `stub`, press tab and then paste in the method signa
 
 ### Type Imports
 
-Type imports must correctly reference Apex types. Java types like `String`,`Integer` can make a class appear valid when it isn't.
+Type imports must correctly reference Apex types. Java types like `String`,`Integer`,`Map`,`List` can make a class appear valid when it isn't. The only exception is `Object`, which is allowed.
 
-It is important to do a local test run with the [apex-ls](https://github.com/apex-dev-tools/apex-ls) before releasing, to make sure it can load all the platform types and spot any missing imports. It will report errors when `java.lang...` types are used.
+It is important to prepare updates with [apex-ls](https://github.com/apex-dev-tools/apex-ls), and test before releasing, to make sure it can load all the platform types and spot any missing imports. It will report errors when `java.lang...` types are used.
