@@ -6,6 +6,7 @@ package com.nawforce.runforce.ConnectApi;
 
 @SuppressWarnings("unused")
 public enum ExternalCredentialParameterType {
+  AdditionalRefreshStatusCode,
   AuthParameter,
   AuthProvider,
   AuthProviderUrl,

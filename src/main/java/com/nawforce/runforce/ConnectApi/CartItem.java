@@ -21,7 +21,9 @@ public class CartItem extends AbstractCartItem {
   public String totalPrice;
   public String totalTax;
   public String unitAdjustedPrice;
+  public String unitAdjustedPriceWithItemAdj;
   public String unitAdjustmentAmount;
+  public String unitItemAdjustmentAmount;
 
   public CartItem() {throw new java.lang.UnsupportedOperationException();}
 }

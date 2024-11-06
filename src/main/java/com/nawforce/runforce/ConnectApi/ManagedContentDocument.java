@@ -11,6 +11,7 @@ import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public class ManagedContentDocument {
+  public String apiName;
   public Map<String, Object> contentBody;
   public String contentKey;
   public ManagedContentSpaceSummary contentSpace;

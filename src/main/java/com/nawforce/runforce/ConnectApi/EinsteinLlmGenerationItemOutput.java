@@ -10,6 +10,7 @@ import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public class EinsteinLlmGenerationItemOutput {
+  public EinsteinLlmGenerationsContentQualityOutput contentQualityRepresentation;
   public String parameters;
   public String responseId;
   public EinsteinLlmGenerationSafetyScoreOutput safetyScoreRepresentation;

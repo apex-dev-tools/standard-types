@@ -4,6 +4,7 @@
 
 package com.nawforce.runforce.ConnectApi;
 
+import com.nawforce.runforce.System.*;
 import com.nawforce.runforce.System.Boolean;
 import com.nawforce.runforce.System.Integer;
 import com.nawforce.runforce.System.String;
@@ -14,6 +15,7 @@ public class CartSummary {
   public String asyncOperationStatus;
   public String cartId;
   public String currencyIsoCode;
+  public List<SObject> customFields;
   public String firstPymtGrandTotalAmount;
   public String firstPymtTotalTaxAmount;
   public String grandTotalAmount;
@@ -24,6 +26,8 @@ public class CartSummary {
   public String purchaseOrderNumber;
   public CartStatus status;
   public String taxType;
+  public String totalAmountWithItemAdjustment;
+  public String totalCartLevelAdjustmentAmount;
   public String totalChargeAmount;
   public String totalListPrice;
   public String totalProductAmount;

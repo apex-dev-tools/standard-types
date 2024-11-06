@@ -10,6 +10,7 @@ import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public class ManagedContentDocumentInput {
+  public String apiName;
   public ManagedContentBodyInput contentBody;
   public String contentKey;
   public String contentSpaceOrFolderId;

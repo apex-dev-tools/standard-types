@@ -4,16 +4,18 @@
 
 package com.nawforce.runforce.ConnectApi;
 
+import com.nawforce.runforce.System.*;
 import com.nawforce.runforce.System.Boolean;
 import com.nawforce.runforce.System.Integer;
 import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
-public class AbstractCartItem {
+public abstract class AbstractCartItem {
   public BillingFrequency billingFrequency;
   public String cartDeliveryGroupId;
   public String cartId;
   public String cartItemId;
+  public List<SObject> customFields;
   public CartMessagesSummary messagesSummary;
   public String name;
   public CartItemProduct productDetails;
