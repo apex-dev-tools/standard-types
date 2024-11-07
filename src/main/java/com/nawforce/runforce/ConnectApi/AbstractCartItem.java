@@ -15,9 +15,11 @@ public abstract class AbstractCartItem {
   public String cartDeliveryGroupId;
   public String cartId;
   public String cartItemId;
+  public Integer childProductCount;
   public List<SObject> customFields;
   public CartMessagesSummary messagesSummary;
   public String name;
+  public String parentCartItemId;
   public CartItemProduct productDetails;
   public String productId;
   public String productSelling;

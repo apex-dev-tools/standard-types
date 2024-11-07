@@ -14,6 +14,7 @@ public class CartItem extends AbstractCartItem {
   public String firstPymtTotalTax;
   public String itemizedAdjustmentAmount;
   public String listPrice;
+  public ProductClass productClass;
   public String salesPrice;
   public String totalAdjustmentAmount;
   public String totalAmount;
