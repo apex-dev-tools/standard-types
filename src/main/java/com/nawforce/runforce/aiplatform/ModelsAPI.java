@@ -4,6 +4,7 @@
 
 package com.nawforce.runforce.aiplatform;
 
+import com.nawforce.runforce.System.Exception;
 import com.nawforce.runforce.System.Integer;
 import com.nawforce.runforce.System.String;
 
@@ -31,7 +32,7 @@ public class ModelsAPI {
     public createChatGenerations_Response() {throw new UnsupportedOperationException();}
   }
 
-  public static class createChatGenerations_ResponseException {
+  public static class createChatGenerations_ResponseException extends Exception {
     public Integer responseCode;
     public ModelsAPI_Error Code400;
     public ModelsAPI_Error Code401;
@@ -43,6 +44,9 @@ public class ModelsAPI {
     public ModelsAPI_Error defaultResponse;
 
     public createChatGenerations_ResponseException() {throw new UnsupportedOperationException();}
+    public createChatGenerations_ResponseException(Exception param1) {throw new UnsupportedOperationException();}
+    public createChatGenerations_ResponseException(String param1) {throw new UnsupportedOperationException();}
+    public createChatGenerations_ResponseException(String param1, Exception param2) {throw new UnsupportedOperationException();}
   }
 
   public static class createGenerations_Request {
@@ -59,7 +63,7 @@ public class ModelsAPI {
     public createGenerations_Response() {throw new UnsupportedOperationException();}
   }
 
-  public static class createGenerations_ResponseException {
+  public static class createGenerations_ResponseException extends Exception {
     public Integer responseCode;
     public ModelsAPI_Error Code400;
     public ModelsAPI_Error Code401;
@@ -71,6 +75,9 @@ public class ModelsAPI {
     public ModelsAPI_Error defaultResponse;
 
     public createGenerations_ResponseException() {throw new UnsupportedOperationException();}
+    public createGenerations_ResponseException(Exception param1) {throw new UnsupportedOperationException();}
+    public createGenerations_ResponseException(String param1) {throw new UnsupportedOperationException();}
+    public createGenerations_ResponseException(String param1, Exception param2) {throw new UnsupportedOperationException();}
   }
 
   public static class createEmbeddings_Request {
@@ -87,7 +94,7 @@ public class ModelsAPI {
     public createEmbeddings_Response() {throw new UnsupportedOperationException();}
   }
 
-  public static class createEmbeddings_ResponseException {
+  public static class createEmbeddings_ResponseException extends Exception {
     public Integer responseCode;
     public ModelsAPI_Error Code400;
     public ModelsAPI_Error Code401;
@@ -99,6 +106,9 @@ public class ModelsAPI {
     public ModelsAPI_Error defaultResponse;
 
     public createEmbeddings_ResponseException() {throw new UnsupportedOperationException();}
+    public createEmbeddings_ResponseException(Exception param1) {throw new UnsupportedOperationException();}
+    public createEmbeddings_ResponseException(String param1) {throw new UnsupportedOperationException();}
+    public createEmbeddings_ResponseException(String param1, Exception param2) {throw new UnsupportedOperationException();}
   }
 
   public static class submitFeedback_Request {
@@ -114,7 +124,7 @@ public class ModelsAPI {
     public submitFeedback_Response() {throw new UnsupportedOperationException();}
   }
 
-  public static class submitFeedback_ResponseException {
+  public static class submitFeedback_ResponseException extends Exception {
     public Integer responseCode;
     public ModelsAPI_Error Code400;
     public ModelsAPI_Error Code401;
@@ -126,6 +136,9 @@ public class ModelsAPI {
     public ModelsAPI_Error defaultResponse;
 
     public submitFeedback_ResponseException() {throw new UnsupportedOperationException();}
+    public submitFeedback_ResponseException(Exception param1) {throw new UnsupportedOperationException();}
+    public submitFeedback_ResponseException(String param1) {throw new UnsupportedOperationException();}
+    public submitFeedback_ResponseException(String param1, Exception param2) {throw new UnsupportedOperationException();}
   }
 
 }
