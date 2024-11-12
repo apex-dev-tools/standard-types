@@ -4,6 +4,8 @@
 
 package com.nawforce.runforce.ConnectApi;
 
+import com.nawforce.runforce.System.String;
+
 @SuppressWarnings("unused")
 public class ExternalAuthIdentityProviderInput {
   public IdentityProviderAuthFlow authenticationFlow;

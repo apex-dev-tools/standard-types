@@ -6,6 +6,7 @@ package com.nawforce.runforce.Auth;
 
 import com.nawforce.runforce.System.Id;
 import com.nawforce.runforce.System.Set;
+import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public class HeadlessUserDiscoveryResponse {
