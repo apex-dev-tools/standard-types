@@ -18,6 +18,7 @@ public class CommerceCart {
   public static CartCouponCollection applyCartCoupon(String webstoreId, String effectiveAccountId, String activeCartOrId, CartCouponInput cartCouponInput) {throw new java.lang.UnsupportedOperationException();}
   public static CartCouponCollection applyCartCoupon(String webstoreId, String effectiveAccountId, String activeCartOrId, CartCouponInput cartCouponInput, String currencyIsoCode) {throw new java.lang.UnsupportedOperationException();}
   public static CartToWishlistResult copyCartToWishlist(String webstoreId, String effectiveAccountId, String activeCartOrId, CartToWishlistInput cartToWishlistInput) {throw new java.lang.UnsupportedOperationException();}
+  public static CalculateCartResult calculateCart(String webstoreId, String activeCartOrId, String effectiveAccountId) {throw new UnsupportedOperationException();}
   public static CartSummary createCart(String webstoreId, CartInput cart) {throw new java.lang.UnsupportedOperationException();}
   public static CartSummary cloneCart(String webstoreId, String activeCartOrId, String targetEffectiveAccountId, String targetType) {throw new java.lang.UnsupportedOperationException();}
   public static void deleteCart(String webstoreId, String effectiveAccountId, String activeCartOrId) {throw new java.lang.UnsupportedOperationException();}

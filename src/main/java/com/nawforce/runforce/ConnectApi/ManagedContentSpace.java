@@ -11,6 +11,7 @@ import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public class ManagedContentSpace {
+  public String apiName;
   public String createdBy;
   public Datetime createdDate;
   public String defaultLanguage;

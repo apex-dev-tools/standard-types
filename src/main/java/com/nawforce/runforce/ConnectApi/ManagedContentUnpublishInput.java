@@ -12,6 +12,7 @@ import com.nawforce.runforce.System.String;
 @SuppressWarnings("unused")
 public class ManagedContentUnpublishInput {
   public List<String> contentIds;
+  public String contextContentSpaceId;
   public String description;
   public List<String> variantIds;
 

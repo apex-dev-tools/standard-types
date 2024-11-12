@@ -11,11 +11,13 @@ import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public class ManagedContent {
+  public static ManagedContentDocumentClone cloneManagedContentDocument(String contentKeyOrId, ManagedContentDocumentCloneInput ManagedContentCloneInputParam) {throw new UnsupportedOperationException();}
   public static ManagedContentDocument createManagedContent(ManagedContentDocumentInput ManagedContentInputParam) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentDocument createManagedContentWithMedia(ManagedContentDocumentInput ManagedContentInputParam, BinaryInput contentData) {throw new java.lang.UnsupportedOperationException();}
   public static void deleteManagedContentVariant(String variantId) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVersionCollection getAllContent(String channelId, Integer pageParam, Integer pageSize, String language, String managedContentType, Boolean includeMetadata, String startDate, String endDate) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVersionCollection getAllContent(String channelId, Integer pageParam, Integer pageSize, String language, String managedContentType, Boolean includeMetadata, String startDate, String endDate, Boolean showAbsoluteUrl) {throw new java.lang.UnsupportedOperationException();}
+  public static ManagedContentChannelCollection getAllDeliveryChannels(Integer pageParam, Integer pageSize) {throw new UnsupportedOperationException();}
   public static ManagedContentVersionCollection getAllManagedContent(String communityId, Integer pageParam, Integer pageSize, String language, String managedContentType) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVersionCollection getAllManagedContent(String communityId, Integer pageParam, Integer pageSize, String language, String managedContentType, Boolean showAbsoluteUrl) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVersionCollection getContentByContentKeys(String channelId, List<String> contentKeys, Integer pageParam, Integer pageSize, String language, String managedContentType, Boolean includeMetadata, String startDate, String endDate, Boolean showAbsoluteUrl) {throw new java.lang.UnsupportedOperationException();}

@@ -18,6 +18,7 @@ package com.nawforce.runforce.ConnectApi;
 public enum MaintenanceType {
 	Downtime,
 	GenerallyAvailable,
+	MaintenanceAndAvailable,
 	MaintenanceWithDowntime,
 	ReadOnly
 }

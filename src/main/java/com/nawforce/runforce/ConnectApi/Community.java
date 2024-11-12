@@ -21,29 +21,35 @@ import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public class Community {
-	public Boolean allowChatterAccessWithoutLogin;
-	public Boolean allowMembersToFlag;
-	public String description;
-	public String id;
-	public Boolean invitationsEnabled;
-	public Boolean knowledgeableEnabled;
-	public String loginUrl;
-	public Boolean memberVisibilityEnabled;
-	public String name;
-	public Boolean nicknameDisplayEnabled;
-	public Boolean privateMessagesEnabled;
-	public Boolean reputationEnabled;
-	public Boolean sendWelcomeEmail;
-	public Boolean siteAsContainerEnabled;
-	public String siteUrl;
-	public CommunityStatus status;
-	public String url;
-	public String urlPathPrefix;
+  public Boolean allowChatterAccessWithoutLogin;
+  public Boolean allowMembersToFlag;
+  public Boolean builderBasedSnaEnabled;
+  public String builderUrl;
+  public String contentSpaceId;
+  public String description;
+  public Boolean guestMemberVisibilityEnabled;
+  public String id;
+  public Boolean imageOptimizationCDNEnabled;
+  public Boolean invitationsEnabled;
+  public Boolean knowledgeableEnabled;
+  public String loginUrl;
+  public Boolean memberVisibilityEnabled;
+  public String name;
+  public Boolean nicknameDisplayEnabled;
+  public Boolean privateMessagesEnabled;
+  public Boolean reputationEnabled;
+  public Boolean sendWelcomeEmail;
+  public Boolean siteAsContainerEnabled;
+  public String siteUrl;
+  public CommunityStatus status;
+  public String templateName;
+  public String url;
+  public String urlPathPrefix;
 
-	public Community() {throw new java.lang.UnsupportedOperationException();}
+  public Community() {throw new java.lang.UnsupportedOperationException();}
 
-	public Boolean equals$(Object obj) {throw new java.lang.UnsupportedOperationException();}
-	public Double getBuildVersion() {throw new java.lang.UnsupportedOperationException();}
-	public Integer hashCode$() {throw new java.lang.UnsupportedOperationException();}
-	public String toString$() {throw new java.lang.UnsupportedOperationException();}
+  public Boolean equals$(Object obj) {throw new java.lang.UnsupportedOperationException();}
+  public Double getBuildVersion() {throw new java.lang.UnsupportedOperationException();}
+  public Integer hashCode$() {throw new java.lang.UnsupportedOperationException();}
+  public String toString$() {throw new java.lang.UnsupportedOperationException();}
 }

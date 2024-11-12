@@ -14,6 +14,7 @@ public class CartItem extends AbstractCartItem {
   public String firstPymtTotalTax;
   public String itemizedAdjustmentAmount;
   public String listPrice;
+  public ProductClass productClass;
   public String salesPrice;
   public String totalAdjustmentAmount;
   public String totalAmount;
@@ -21,7 +22,9 @@ public class CartItem extends AbstractCartItem {
   public String totalPrice;
   public String totalTax;
   public String unitAdjustedPrice;
+  public String unitAdjustedPriceWithItemAdj;
   public String unitAdjustmentAmount;
+  public String unitItemAdjustmentAmount;
 
   public CartItem() {throw new java.lang.UnsupportedOperationException();}
 }

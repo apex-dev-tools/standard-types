@@ -4,6 +4,7 @@
 
 package com.nawforce.runforce.ConnectApi;
 
+import com.nawforce.runforce.System.*;
 import com.nawforce.runforce.System.Boolean;
 import com.nawforce.runforce.System.Integer;
 import com.nawforce.runforce.System.String;
@@ -11,6 +12,7 @@ import com.nawforce.runforce.System.String;
 @SuppressWarnings("unused")
 public class CartItemInput {
   public String cartDeliveryGroupId;
+  public List<SObject> customFields;
   public String productId;
   public String productSellingModelId;
   public String quantity;
