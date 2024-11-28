@@ -14,7 +14,7 @@ To use the jar in a maven project add the following to your pom.xml
 <dependency>
   <groupId>io.github.apex-dev-tools</groupId>
   <artifactId>standard-types</artifactId>
-  <version>62.0.0</version>
+  <version>62.0.1</version>
 </dependency>
 ```
 
