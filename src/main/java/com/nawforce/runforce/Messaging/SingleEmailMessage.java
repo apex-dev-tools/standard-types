@@ -46,53 +46,43 @@ public class SingleEmailMessage extends Email {
 	public SingleEmailMessage() {throw new java.lang.UnsupportedOperationException();}
 
 	public List<String> getBccAddresses() {throw new java.lang.UnsupportedOperationException();}
-	public Boolean getBccSender() {throw new java.lang.UnsupportedOperationException();}
 	public List<String> getCcAddresses() {throw new java.lang.UnsupportedOperationException();}
 	public String getCharset() {throw new java.lang.UnsupportedOperationException();}
-	public String getEmailPriority() {throw new java.lang.UnsupportedOperationException();}
 	public List<String> getEntityAttachments() {throw new java.lang.UnsupportedOperationException();}
 	public List<EmailFileAttachment> getFileAttachments() {throw new java.lang.UnsupportedOperationException();}
 	public String getHtmlBody() {throw new java.lang.UnsupportedOperationException();}
 	public String getInReplyTo() {throw new java.lang.UnsupportedOperationException();}
+	public Boolean getOneClickPost() {throw new java.lang.UnsupportedOperationException();}
 	public String getOptOutPolicy() {throw new java.lang.UnsupportedOperationException();}
 	public Id getOrgWideEmailAddressId() {throw new java.lang.UnsupportedOperationException();}
 	public String getPlainTextBody() {throw new java.lang.UnsupportedOperationException();}
 	public String getReferences() {throw new java.lang.UnsupportedOperationException();}
-	public String getReplyTo() {throw new java.lang.UnsupportedOperationException();}
-	public Boolean getSaveAsActivity() {throw new java.lang.UnsupportedOperationException();}
-	public String getSenderDisplayName() {throw new java.lang.UnsupportedOperationException();}
-	public String getSubject() {throw new java.lang.UnsupportedOperationException();}
 	public Id getTargetObjectId() {throw new java.lang.UnsupportedOperationException();}
 	public Id getTemplateId() {throw new java.lang.UnsupportedOperationException();}
 	public String getTemplateName() {throw new java.lang.UnsupportedOperationException();}
 	public List<String> getToAddresses() {throw new java.lang.UnsupportedOperationException();}
-	public Boolean getUseSignature() {throw new java.lang.UnsupportedOperationException();}
 	public Id getWhatId() {throw new java.lang.UnsupportedOperationException();}
 	public Boolean isTreatBodiesAsTemplate() {throw new java.lang.UnsupportedOperationException();}
 	public Boolean isTreatTargetObjectAsRecipient() {throw new java.lang.UnsupportedOperationException();}
 	public Boolean isUserMail() {throw new java.lang.UnsupportedOperationException();}
 	public void setBccAddresses(List<String> param1) {throw new java.lang.UnsupportedOperationException();}
-	public void setBccSender(Boolean param1) {throw new java.lang.UnsupportedOperationException();}
 	public void setCcAddresses(List<String> param1) {throw new java.lang.UnsupportedOperationException();}
 	public void setCharset(String param1) {throw new java.lang.UnsupportedOperationException();}
-	public void setEmailPriority(String param1) {throw new java.lang.UnsupportedOperationException();}
 	public void setEntityAttachments(List<String> param1) {throw new java.lang.UnsupportedOperationException();}
 	public void setFileAttachments(List<EmailFileAttachment> param1) {throw new java.lang.UnsupportedOperationException();}
 	public void setHtmlBody(String param1) {throw new java.lang.UnsupportedOperationException();}
 	public void setInReplyTo(String param1) {throw new java.lang.UnsupportedOperationException();}
+	public void setOneClickPost(Boolean oneClickPost) {throw new java.lang.UnsupportedOperationException();}
 	public void setOptOutPolicy(String param1) {throw new java.lang.UnsupportedOperationException();}
 	public void setOrgWideEmailAddressId(Id param1) {throw new java.lang.UnsupportedOperationException();}
 	public void setPlainTextBody(String param1) {throw new java.lang.UnsupportedOperationException();}
 	public void setReferences(String param1) {throw new java.lang.UnsupportedOperationException();}
-	public void setReplyTo(String param1) {throw new java.lang.UnsupportedOperationException();}
-	public void setSaveAsActivity(Boolean param1) {throw new java.lang.UnsupportedOperationException();}
-	public void setSenderDisplayName(String param1) {throw new java.lang.UnsupportedOperationException();}
-	public void setSubject(String param1) {throw new java.lang.UnsupportedOperationException();}
 	public void setTargetObjectId(Id param1) {throw new java.lang.UnsupportedOperationException();}
 	public void setTemplateId(Id param1) {throw new java.lang.UnsupportedOperationException();}
 	public void setToAddresses(List<String> param1) {throw new java.lang.UnsupportedOperationException();}
 	public void setTreatBodiesAsTemplate(Boolean param1) {throw new java.lang.UnsupportedOperationException();}
 	public void setTreatTargetObjectAsRecipient(Boolean param1) {throw new java.lang.UnsupportedOperationException();}
-	public void setUseSignature(Boolean param1) {throw new java.lang.UnsupportedOperationException();}
+	public void setUnsubscribeComment(String unsubscribeComment) {throw new java.lang.UnsupportedOperationException();}
+	public void setUnsubscribeUrls(List<String> unsubscribeUrls) {throw new java.lang.UnsupportedOperationException();}
 	public void setWhatId(Id param1) {throw new java.lang.UnsupportedOperationException();}
 }

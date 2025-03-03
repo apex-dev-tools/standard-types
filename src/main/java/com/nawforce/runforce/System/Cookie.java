@@ -17,11 +17,15 @@ package com.nawforce.runforce.System;
 @SuppressWarnings("unused")
 public class Cookie {
 	public Cookie(String name, String value, String path, Integer maxAge, Boolean isSecure) {throw new java.lang.UnsupportedOperationException();}
+	public Cookie(String name, String value, String path, Integer maxAge, Boolean isSecure, String sameSite) {throw new java.lang.UnsupportedOperationException();}
+	public Cookie(String name, String value, String path, Integer maxAge, Boolean isSecure, String sameSite, Boolean isHttpOnly) {throw new java.lang.UnsupportedOperationException();}
 
 	public String getDomain() {throw new java.lang.UnsupportedOperationException();}
 	public Integer getMaxAge() {throw new java.lang.UnsupportedOperationException();}
 	public String getName() {throw new java.lang.UnsupportedOperationException();}
 	public String getPath() {throw new java.lang.UnsupportedOperationException();}
+	public String getSameSite() {throw new java.lang.UnsupportedOperationException();}
 	public String getValue() {throw new java.lang.UnsupportedOperationException();}
 	public Boolean isSecure() {throw new java.lang.UnsupportedOperationException();}
+	public Boolean isHttpOnly() {throw new java.lang.UnsupportedOperationException();}
 }
