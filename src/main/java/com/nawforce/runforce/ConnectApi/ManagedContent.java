@@ -32,6 +32,9 @@ public class ManagedContent {
   public static ManagedContentVersionCollection getManagedContentByTopicsAndIds(String communityId, List<String> managedContentIds, List<String> topics, Integer pageParam, Integer pageSize, String language, String managedContentType) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVersionCollection getManagedContentByTopicsAndIds(String communityId, List<String> managedContentIds, List<String> topics, Integer pageParam, Integer pageSize, String language, String managedContentType, Boolean showAbsoluteUrl) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentSpace getManagedContentSpace(String contentSpaceId) {throw new java.lang.UnsupportedOperationException();}
+  public static MCSFolderShareCollection getMCSFolderShares(String folderId) {throw new java.lang.UnsupportedOperationException();}
+  public static MCSFolderShareTargetCollection getMCSFolderShareTargets(String folderId) {throw new java.lang.UnsupportedOperationException();}
+  public static MCSFolderShareCollection patchMCSFolderShares(String folderId, MCSFolderShareCollectionUpdateInput mcsFolderShareCollectionUpdateInput) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentPublishOutput publish(ManagedContentPublishInput publishInput) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVariant replaceManagedContentVariant(String variantId, ManagedContentVariantUpdateInput ManagedContentVariantInputParam) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVariant replaceManagedContentVariantWithMedia(String variantId, ManagedContentVariantUpdateInput ManagedContentVariantInputParam, BinaryInput contentData) {throw new java.lang.UnsupportedOperationException();}
