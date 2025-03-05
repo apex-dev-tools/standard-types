@@ -4,7 +4,7 @@ Stub declarations for Salesforce platform types encoded as compilable Java.
 
 These stub declarations help support static analysis of Apex code in [apex-ls](https://github.com/apex-dev-tools/apex-ls) but you may also find them useful for other purposes. They have been encoded in Java to get the benefit of type checking by javac so it easier to spot when something is amiss. In apex-ls JVM reflection is used to 'read' the stubs as part of the static analysis.
 
-The library is versioned to reflect Salesforce API numbers, so currently v62.X.X matches the Salesforce Winter '25 API.
+The library is versioned to reflect Salesforce API numbers, so currently v63.X.X matches the Salesforce Spring '25 API.
 
 ## Installation
 
@@ -14,7 +14,7 @@ To use the jar in a maven project add the following to your pom.xml
 <dependency>
   <groupId>io.github.apex-dev-tools</groupId>
   <artifactId>standard-types</artifactId>
-  <version>62.0.1</version>
+  <version>63.0.0</version>
 </dependency>
 ```
 
