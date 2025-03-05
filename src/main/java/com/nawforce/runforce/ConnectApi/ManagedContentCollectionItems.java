@@ -15,9 +15,12 @@ public class ManagedContentCollectionItems {
   public ManagedContentDeliveryChannelSummaryRepresentation channelSummary;
   public String collectionKey;
   public ManagedContentTypeSummary collectionType;
+  public String currentPageUrl;
   public String id;
   public List<ManagedContentCollectionItem> items;
   public String language;
+  public String nextPageUrl;
+  public String previousPageUrl;
   public Datetime publishedDate;
   public String title;
   public Integer total;

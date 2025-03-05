@@ -13,12 +13,15 @@ public class ExternalAuthIdentityProvider {
   public IdentityProviderAuthProtocol authenticationProtocol;
   public String authorizeUrl;
   public String callbackUrl;
+  public IdentityProviderClientAuth clientAuthentication;
   public String createdByNamespace;
   public List<ExternalAuthIdentityProviderCredential> credentials;
   public String description;
   public String fullName;
   public String id;
   public String label;
+  public List<ExternalAuthIdentityProviderParameter> parameters;
+  public String standardExternalIdentityProvider;
   public String tokenUrl;
   public String url;
   public String userInfoUrl;

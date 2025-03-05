@@ -15,7 +15,6 @@
 package com.nawforce.runforce.ConnectApi;
 
 import com.nawforce.runforce.System.Boolean;
-import com.nawforce.runforce.System.Double;
 import com.nawforce.runforce.System.Integer;
 import com.nawforce.runforce.System.String;
 import com.nawforce.runforce.System.*;
@@ -23,6 +22,7 @@ import com.nawforce.runforce.System.*;
 @SuppressWarnings("unused")
 public class EmailMessageCapability extends FeedElementCapability {
 	public EmailAttachment attachments;
+	public String automationType;
 	public List<EmailAddress> bccAddresses;
 	public String body;
 	public List<EmailAddress> ccAddresses;
@@ -36,9 +36,4 @@ public class EmailMessageCapability extends FeedElementCapability {
 	public Integer totalAttachments;
 
 	public EmailMessageCapability() {throw new java.lang.UnsupportedOperationException();}
-
-	public Boolean equals$(Object obj) {throw new java.lang.UnsupportedOperationException();}
-	public Double getBuildVersion() {throw new java.lang.UnsupportedOperationException();}
-	public Integer hashCode$() {throw new java.lang.UnsupportedOperationException();}
-	public String toString$() {throw new java.lang.UnsupportedOperationException();}
 }

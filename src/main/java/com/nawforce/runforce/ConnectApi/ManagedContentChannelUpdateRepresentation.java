@@ -12,6 +12,7 @@ import com.nawforce.runforce.System.String;
 public class ManagedContentChannelUpdateRepresentation {
   public Long cacheControlMaxAge;
   public String domain;
+  public Boolean isDedicatedContentDelivery;
   public Boolean isDomainLocked;
   public Boolean isSearchable;
   public Long mediaCacheControlMaxAge;

@@ -12,6 +12,7 @@ public class ManagedContentDeliveryChannelRepresentation {
   public String domain;
   public String domainName;
   public String id;
+  public Boolean isDedicatedContentDelivery;
   public Boolean isDomainLocked;
   public Boolean isSearchable;
   public String name;
