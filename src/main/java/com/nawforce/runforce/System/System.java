@@ -40,11 +40,15 @@ public class System {
 	public static Boolean isScheduled() {throw new java.lang.UnsupportedOperationException();}
 	public static void movePassword(Id targetUserId, Id sourceUserId) {throw new java.lang.UnsupportedOperationException();}
 	public static Datetime now() {throw new java.lang.UnsupportedOperationException();}
+	public static void pauseJobById(String cronTriggerId) {throw new java.lang.UnsupportedOperationException();}
+	public static void pauseJobByName(String jobName) {throw new java.lang.UnsupportedOperationException();}
 	public static List<Id> process(List<Id> workitemIds, String action, String comments, String nextApprover) {throw new java.lang.UnsupportedOperationException();}
 	public static Integer purgeOldAsyncJobs(Date date) {throw new java.lang.UnsupportedOperationException();}
 	public static Version requestVersion() {throw new java.lang.UnsupportedOperationException();}
 	public static ResetPasswordResult resetPassword(Id userId, Boolean sendUserEmail) {throw new java.lang.UnsupportedOperationException();}
 	public static ResetPasswordResult resetPasswordWithEmailTemplate(Id userId, Boolean sendUserEmail, String emailTemplateName) {throw new java.lang.UnsupportedOperationException();}
+	public static void resumeJobById(String cronTriggerId) {throw new java.lang.UnsupportedOperationException();}
+	public static void resumeJobByName(String jobName) {throw new java.lang.UnsupportedOperationException();}
 	public static void runAs(Version version) {throw new java.lang.UnsupportedOperationException();}
 	public static void runAs(SObject user, Object block) {throw new java.lang.UnsupportedOperationException();}
 	public static String schedule(String jobName, String cronExp, Object schedulable) {throw new java.lang.UnsupportedOperationException();}

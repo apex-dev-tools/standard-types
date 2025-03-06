@@ -14,7 +14,9 @@ public class ManagedContentDelivery {
   public static ManagedContentDeliveryChannelRepresentation getChannel(String channelId) {throw new UnsupportedOperationException();}
   public static ManagedContentDeliveryChannelsRepresentation getChannels(Integer pageParam, Integer pageSize) {throw new UnsupportedOperationException();}
   public static ManagedContentCollectionItems getCollectionItemsForChannel(String channelId, String collectionKeyOrId, String language) {throw new UnsupportedOperationException();}
+  public static ManagedContentCollectionItems getCollectionItemsForChannel(String channelId, String collectionKeyOrId, String language, Integer pageToken, Integer pageSize) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentCollectionItems getCollectionItemsForSite(String siteId, String collectionKeyOrId, String language) {throw new UnsupportedOperationException();}
+  public static ManagedContentCollectionItems getCollectionItemsForSite(String siteId, String collectionKeyOrId, String language, Integer pageToken, Integer pageSize) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentDeliveryDocument getManagedContentForChannel(String channelId, String contentKeyOrId, Boolean showAbsoluteUrl) {throw new UnsupportedOperationException();}
   public static ManagedContentDeliveryDocument getManagedContentForChannel(String channelId, String contentKeyOrId, String language, Boolean showAbsoluteUrl) {throw new UnsupportedOperationException();}
   public static ManagedContentDeliveryDocument getManagedContentForChannel(String channelId, String contentKeyOrId, String language, Boolean showAbsoluteUrl, Integer referenceDepth, Boolean expandReferences, Boolean referencesAsList) {throw new UnsupportedOperationException();}

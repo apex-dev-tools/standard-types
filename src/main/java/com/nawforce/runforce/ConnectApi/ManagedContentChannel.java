@@ -19,6 +19,7 @@ public class ManagedContentChannel extends AbstractManagedContentChannelRepresen
   public String domainName;
   public String id;
   public Boolean isChannelSearchable;
+  public Boolean isDedicatedContentDelivery;
   public Boolean isDomainLocked;
   public Boolean isSearchable;
   public ManagedContentChannelDomainRepresentation managedContentChannelDomain;

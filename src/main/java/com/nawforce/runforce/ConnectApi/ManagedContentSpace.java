@@ -16,6 +16,7 @@ public class ManagedContentSpace {
   public Datetime createdDate;
   public String defaultLanguage;
   public String description;
+  public String fullyQualifiedName;
   public String id;
   public Boolean isEnhancedSpace;
   public String lastModifiedBy;

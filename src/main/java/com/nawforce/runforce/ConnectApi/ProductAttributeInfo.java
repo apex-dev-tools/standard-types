@@ -16,7 +16,9 @@ public class ProductAttributeInfo {
   public String fieldEnumOrId;
   public String label;
   public String objectName;
+  public List<ProductAttributeValueMetadataRepresentation> options;
   public Integer sequence;
+  public ProductAttributeViewType viewType;
 
   public ProductAttributeInfo() {throw new java.lang.UnsupportedOperationException();}
 }
