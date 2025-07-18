@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: [ master, main ]
+    branches: [master, main]
   pull_request:
-    branches: [ "**" ]
+    branches: ["**"]
   workflow_dispatch:
 
 jobs:
@@ -14,12 +14,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up JDK 1.8
+      - name: Set up JDK
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: 8
-          cache: 'maven'
+          distribution: "temurin"
+          java-version: 11
+          cache: "maven"
 
       - name: Build with Maven
         run: |
