@@ -14,6 +14,8 @@ import com.nawforce.runforce.System.Type;
 public class FormulaBuilder {
   public FormulaInstance build() {throw new java.lang.UnsupportedOperationException();}
   public static FormulaBuilder builder() {throw new java.lang.UnsupportedOperationException();}
+
+  public FormulaBuilder parseAsTemplate(Boolean templateMode) {throw new java.lang.UnsupportedOperationException();}
   public FormulaBuilder treatNumericNullAsZero(Boolean isNumericNullZero) {throw new java.lang.UnsupportedOperationException();}
   public FormulaBuilder withFormula(String formulaText) {throw new java.lang.UnsupportedOperationException();}
   public FormulaBuilder withGlobalVariables(List<FormulaGlobal> formulaGlobals) {throw new java.lang.UnsupportedOperationException();}
