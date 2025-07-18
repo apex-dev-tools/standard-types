@@ -19,9 +19,11 @@ import com.nawforce.runforce.System.String;
 @SuppressWarnings("unused")
 public class AuthProviderTokenResponse {
   public AuthProviderTokenResponse(String provider, String oauthToken, String oauthSecretOrRefreshToken, String state) {throw new java.lang.UnsupportedOperationException();}
+  public AuthProviderTokenResponse(String provider, String oauthToken, String oauthSecretOrRefreshToken, String state, String idToken) {throw new java.lang.UnsupportedOperationException();}
 
   public String oauthSecretOrRefreshToken;
   public String oauthToken;
   public String provider;
   public String state;
+  public String idToken;
 }
