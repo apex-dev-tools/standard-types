@@ -4,6 +4,7 @@
 
 package com.nawforce.runforce.ConnectApi;
 
+import com.nawforce.runforce.System.Boolean;
 import com.nawforce.runforce.System.Datetime;
 import com.nawforce.runforce.System.List;
 import com.nawforce.runforce.System.String;
