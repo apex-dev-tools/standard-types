@@ -31,7 +31,8 @@ public class PluginDescribeResult {
 		ID,
 		INTEGER,
 		LONG,
-		STRING
+		STRING,
+		TIME
 	}
 
   public static class InputParameter {

@@ -13,6 +13,7 @@ import com.nawforce.runforce.System.String;
 public class ManagedContentVariant {
   public String apiName;
   public Map<String, Object> contentBody;
+  public String contentFqn;
   public String contentKey;
   public ManagedContentSpaceSummary contentSpace;
   public ManagedContentTypeSummary contentType;

@@ -14,6 +14,7 @@ public class NamedCredential {
     public String calloutUrl;
     public String createdByNamespace;
     public List<CredentialCustomHeader> customHeaders;
+    public String description;
     public String developerName;
     public List<ExternalCredential> externalCredentials;
     public String id;

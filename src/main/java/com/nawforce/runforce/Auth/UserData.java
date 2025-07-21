@@ -20,6 +20,7 @@ import com.nawforce.runforce.System.String;
 @SuppressWarnings("unused")
 public class UserData {
   public UserData(String identifier, String firstName, String lastName, String fullName, String email, String link, String userName, String locale, String provider, String siteLoginUrl, Map<String,String> attributeMap)  {throw new java.lang.UnsupportedOperationException();}
+  public UserData(String identifier, String firstName, String lastName, String fullName, String email, String link, String username, String locale, String provider, String siteLoginUrl, Map<String,String> attributeMap, String idToken, String userInfoJSONString) {throw new java.lang.UnsupportedOperationException();}
 
   public String identifier;
   public String firstName;
@@ -32,4 +33,7 @@ public class UserData {
   public String provider;
   public String siteLoginUrl;
   public Map<String, String> attributeMap;
+  public String idToken;
+  public String userInfoJSONString;
+  public String idTokenJSONString;
 }
