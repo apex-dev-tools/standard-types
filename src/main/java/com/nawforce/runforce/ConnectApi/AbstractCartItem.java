@@ -11,6 +11,7 @@ import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public abstract class AbstractCartItem {
+  public String currencyIsoCode;
   public BillingFrequency billingFrequency;
   public String cartDeliveryGroupId;
   public String cartId;

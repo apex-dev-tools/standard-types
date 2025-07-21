@@ -8,6 +8,8 @@ package com.nawforce.runforce.ConnectApi;
 public enum ExternalAuthIdentityProviderParameterType {
   AuthorizeRequestQueryParameter,
   IdentityProviderOptions,
+  ManagedByComponent,
+  ManagedByFeature,
   RefreshRequestBodyParameter,
   RefreshRequestHttpHeader,
   RefreshRequestQueryParameter,

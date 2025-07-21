@@ -12,6 +12,7 @@ public class NamedCredentialInput {
   public NamedCredentialCalloutOptionsInput calloutOptions;
   public String calloutUrl;
   public List<CredentialCustomHeaderInput> customHeaders;
+  public String description;
   public String developerName;
   public List<ExternalCredentialInput> externalCredentials;
   public String masterLabel;

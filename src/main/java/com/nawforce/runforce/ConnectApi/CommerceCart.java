@@ -12,6 +12,7 @@ import com.nawforce.runforce.System.String;
 @SuppressWarnings("unused")
 public class CommerceCart {
   public static CartItem addItemToCart(String webstoreId, String effectiveAccountId, String activeCartOrId, CartItemInput cartItemInput, String currencyIsoCode) {throw new java.lang.UnsupportedOperationException();}
+  public static CartItem addItemToCart(String webstoreId, String effectiveAccountId, String activeCartOrId, CartItemInput cartItemInput, String currencyIsoCode, Boolean includeCartData) {throw new java.lang.UnsupportedOperationException();}
   public static BatchResult[] addItemsToCart(String webstoreId, String effectiveAccountId, String activeCartOrId, List<BatchInput> cartItems) {throw new java.lang.UnsupportedOperationException();}
   public static BatchResult[] addItemsToCart(String webstoreId, String effectiveAccountId, String activeCartOrId, List<BatchInput> cartItems, String currencyIsoCode) {throw new java.lang.UnsupportedOperationException();}
   public static CartItem addItemToCart(String webstoreId, String effectiveAccountId, String activeCartOrId, CartItemInput cartItemInput) {throw new java.lang.UnsupportedOperationException();}
@@ -55,5 +56,6 @@ public class CommerceCart {
   public static CartMessagesVisibilityResult setCartMessagesVisibility(String webstoreId, String activeCartOrId, String effectiveAccountId, CartMessagesVisibilityInput messageVisibility) {throw new java.lang.UnsupportedOperationException();}
   public static CartItem updateCartItem(String webstoreId, String effectiveAccountId, String activeCartOrId, String cartItemId, CartItemInput cartItem) {throw new java.lang.UnsupportedOperationException();}
   public static CartItem updateCartItem(String webstoreId, String effectiveAccountId, String activeCartOrId, String cartItemId, CartItemInput cartItem, String currencyIsoCode) {throw new java.lang.UnsupportedOperationException();}
+  public static CartItem updateCartItem(String webstoreId, String effectiveAccountId, String activeCartOrId, String cartItemId, CartItemInput cartItem, String currencyIsoCode, Boolean includeCartData) {throw new java.lang.UnsupportedOperationException();}
   public static CartInventoryReservationOutputRepresentation upsertInventoryReservation(String webstoreId, String activeCartOrId, String effectiveAccountId, CartInventoryReservationInputRepresentation cartInventoryReservationInput) {throw new java.lang.UnsupportedOperationException();}
 }

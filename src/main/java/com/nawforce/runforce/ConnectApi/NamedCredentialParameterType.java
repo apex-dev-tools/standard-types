@@ -7,5 +7,6 @@ package com.nawforce.runforce.ConnectApi;
 @SuppressWarnings("unused")
 public enum NamedCredentialParameterType {
   AllowedManagedPackageNamespaces,
-  ClientCertificate
+  ClientCertificate,
+  ConnectionStatus
 }

@@ -23,6 +23,7 @@ public class ManagedContentSpace {
   public Datetime lastModifiedDate;
   public String name;
   public String rootFolderId;
+  public ManagedContentSpaceBaseType spaceType;
 
   public ManagedContentSpace() {throw new java.lang.UnsupportedOperationException();}
 

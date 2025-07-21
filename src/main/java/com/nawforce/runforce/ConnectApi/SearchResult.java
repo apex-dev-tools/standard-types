@@ -9,6 +9,7 @@ import com.nawforce.runforce.System.String;
 
 @SuppressWarnings("unused")
 public class SearchResult {
+  public String apiName;
   public Map<String, RecordFieldValue> fields;
   public String id;
   public MatchInfo matchInfo;
