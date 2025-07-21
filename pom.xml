@@ -183,6 +183,7 @@
         </executions>
         <configuration>
           <quiet>true</quiet>
+          <doclint>none</doclint>
         </configuration>
       </plugin>
 
