@@ -16,6 +16,7 @@ package com.nawforce.runforce.System;
 
 import com.nawforce.runforce.Database.DMLOptions;
 import com.nawforce.runforce.Database.Error;
+import com.nawforce.runforce.Internal.RecordSet$;
 import com.nawforce.runforce.SObjectStubs.UserRecordAccess;
 import com.nawforce.runforce.Schema.SObjectField;
 import com.nawforce.runforce.Schema.SObjectType;
@@ -50,8 +51,8 @@ public class SObject {
 	public SObject getSObject(SObjectField field) {throw new java.lang.UnsupportedOperationException();}
 	public SObject getSObject(String field) {throw new java.lang.UnsupportedOperationException();}
 	public SObjectType getSObjectType() {throw new java.lang.UnsupportedOperationException();}
-	public List<SObject> getSObjects(SObjectField field) {throw new java.lang.UnsupportedOperationException();}
-	public List<SObject> getSObjects(String field) {throw new java.lang.UnsupportedOperationException();}
+	public RecordSet$<SObject> getSObjects(SObjectField field) {throw new java.lang.UnsupportedOperationException();}
+	public RecordSet$<SObject> getSObjects(String field) {throw new java.lang.UnsupportedOperationException();}
 	public SObject getValues(String id) {throw new java.lang.UnsupportedOperationException();}
 	public Boolean hasErrors() {throw new java.lang.UnsupportedOperationException();}
 	public Boolean isClone() {throw new java.lang.UnsupportedOperationException();}
