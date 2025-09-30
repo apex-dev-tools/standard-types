@@ -28,6 +28,7 @@ This repository provides Java stub declarations for Salesforce platform types to
 Every method follows this exact pattern:
 
 ```java
+// [link to class documentation page]
 @SuppressWarnings("unused")
 public class ExampleClass {
   public ReturnType methodName(ParamType param) {throw new java.lang.UnsupportedOperationException();}
@@ -96,6 +97,13 @@ mvn install -Dgpg.skip=true  # Skip GPG signing for local builds
 - `options/field-service.txt` - Lists Field Service related types
 
 ## Common Tasks
+
+### Accessing Salesforce Documentation
+
+When working with Apex class reference pages, use **Playwright MCP** to access the content since the Salesforce documentation pages cannot be fetched directly. Use the browser tools to navigate to and extract information from:
+
+- `https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/` - Main Apex Reference documentation
+- Specific class documentation pages for method signatures, constructors, and property definitions
 
 ### Adding New Salesforce Types
 
