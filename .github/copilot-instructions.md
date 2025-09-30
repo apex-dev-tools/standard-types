@@ -30,9 +30,7 @@ Every method follows this exact pattern:
 ```java
 @SuppressWarnings("unused")
 public class ExampleClass {
-    public ReturnType methodName(ParamType param) {
-        throw new java.lang.UnsupportedOperationException();
-    }
+  public ReturnType methodName(ParamType param) {throw new java.lang.UnsupportedOperationException();}
 }
 ```
 
@@ -43,22 +41,41 @@ public class ExampleClass {
 - **ALWAYS use** `com.nawforce.runforce.System.List` (not `java.util.List`)
 - **ONLY exception**: `Object` can reference native Java type
 
-### Class Structure Pattern
+### Class Structure Patterns
+
+#### Static Method Classes
+
+Classes with only static methods (no instance state):
 
 ```java
-package com.nawforce.runforce.PackageName;
-
-import com.nawforce.runforce.System.String;  // Correct import
-
 @SuppressWarnings("unused")
-public class ClassName {
-    public String field;  // Public fields for data classes
-
-    protected ClassName() {throw new java.lang.UnsupportedOperationException();}  // Constructor
-
-    public String getField() {throw new java.lang.UnsupportedOperationException();}  // Methods
+public class StaticMethodClass {
+  public static ReturnType methodName(ParamType param) {throw new java.lang.UnsupportedOperationException();}
 }
 ```
+
+#### Instance Classes
+
+Classes with non-static methods/properties require public constructors:
+
+```java
+@SuppressWarnings("unused")
+public class InstanceClass {
+  public String field;  // Public fields as documented
+
+  public InstanceClass() {throw new java.lang.UnsupportedOperationException();}  // Default constructor
+  public InstanceClass(String param) {throw new java.lang.UnsupportedOperationException();}  // Documented constructors
+
+  public String getField() {throw new java.lang.UnsupportedOperationException();}  // Only documented methods
+}
+```
+
+### Documentation Adherence Rules
+
+- **Method/property order**: Maintain alphabetical order as documented in Salesforce API docs
+- **Getters/setters**: Only create methods explicitly documented; do not auto-generate
+- **Constructor patterns**: Static method classes have no constructors; instance classes have public default constructor plus any documented constructors
+- **Copyright year**: Use current year (2025) for newly created files
 
 ## Build & Development
 
@@ -77,17 +94,30 @@ mvn install -Dgpg.skip=true  # Skip GPG signing for local builds
 
 - No tests (stubs are compilation-only)
 - `options/field-service.txt` - Lists Field Service related types
-- IntelliJ templates available for rapid stub creation using live template `stub`
 
 ## Common Tasks
 
 ### Adding New Salesforce Types
 
-1. Determine correct package based on Salesforce namespace
-2. Use IntelliJ `stub` live template or copy existing similar class
-3. Ensure all imports use `com.nawforce.runforce.*` types
-4. Add `@SuppressWarnings("unused")` annotation
-5. Verify compilation with `mvn compile`
+1. **Determine package location** based on Salesforce namespace mapping
+2. **Set copyright year** to current year (2025) for new files
+3. **Preserve documentation order** - maintain alphabetical method/property order from API docs
+4. **Choose class pattern**:
+   - Static method classes: No constructors
+   - Instance classes: Public default constructor + documented constructors
+5. **Import only `com.nawforce.runforce.*` types** (except `Object`)
+6. **Add `@SuppressWarnings("unused")` annotation**
+7. **Create only documented methods** - no auto-generated getters/setters
+8. **Add documentation link** - include comment above class: `// https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/[class-doc-page].htm`
+9. **Verify compilation** with `mvn compile`
+
+### Updating Existing Classes
+
+1. **Maintain existing method order** when adding new methods
+2. **Follow alphabetical insertion** for new methods per API documentation
+3. **Preserve existing constructor patterns** (static vs instance class style)
+4. **Add documentation link** if not already present - include comment above class with Salesforce documentation URL
+5. **Validate with compilation** after changes
 
 ### Cross-Package Dependencies
 
@@ -102,51 +132,6 @@ import com.nawforce.runforce.System.List;
 ### Static Analysis Integration
 
 These stubs are consumed by apex-ls via JVM reflection - the structure and method signatures must exactly match Salesforce platform APIs for static analysis accuracy.
-
-## Salesforce API Version Updates
-
-### Update Process Overview
-
-This repository is the **first step** in a multi-stage process for updating Apex LS with new Salesforce API versions:
-
-1. **Standard-types update** (this repo) - Add new platform types from Salesforce release notes
-2. **SObject-types update** - Generate org-specific types using describe calls
-3. **Apex-ls integration** - Update dependencies and validate with comprehensive tests
-
-### Platform Types Update Workflow
-
-#### 1. Research New API Changes
-
-- Review [Salesforce Release Notes](https://help.salesforce.com/s/articleView?id=release-notes.salesforce_release_notes.htm) sections:
-  - `Development > Apex` - Language feature changes
-  - `Development > New and Changed Items for Developers > Apex: New and Changed Items` - Updated namespaces and classes
-  - `Development > ConnectApi` - API service updates
-  - Beta features under `Development` (Analytics, AI/Einstein, Wave)
-
-#### 2. Cross-reference with Apex Reference
-
-- Use [Apex Reference Guide](https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_ref_guide.htm) to get exact method signatures
-- Look up new classes and namespaces identified in release notes
-- Verify parameter types and return types match exactly
-- **Expect PDF context**: Apex Reference Guide PDF should be provided to cross-reference method signatures, parameter types, and relationships between classes within a single context window
-
-#### 3. Implementation Steps
-
-1. Create new classes following established patterns in appropriate `com.nawforce.runforce.*` packages
-2. Update existing classes with new methods/fields
-3. Ensure all new imports use `com.nawforce.runforce.*` types
-4. Build and verify: `mvn compile`
-5. Reference previous API update PRs for examples (e.g., [API 61 changes](https://github.com/apex-dev-tools/standard-types/pull/26/files))
-
-#### 4. Integration Testing
-
-After publishing updated standard-types, apex-ls tests will validate:
-
-- **Type count validation** - Update count in `PlatformTypesValidationTest`
-- **`All outer types are valid`** - Catches missing `com.nawforce.runforce.*` imports
-- **`Exceptions are valid`** - Ensures Exception classes properly extend `System.Exception`
-
-Common failures: `Reference to non-platform type java.lang...` errors indicate missing Apex type imports.
 
 ## Sources
 
