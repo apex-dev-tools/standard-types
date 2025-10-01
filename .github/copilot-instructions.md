@@ -42,6 +42,15 @@ public class ExampleClass {
 - **ALWAYS use** `com.nawforce.runforce.System.List` (not `java.util.List`)
 - **ONLY exception**: `Object` can reference native Java type
 
+### Method Name Collision Rules ⚠️
+
+- **Methods that clash with `java.lang.Object`** must be suffixed with `$`:
+  - `equals(Object obj)` → `equals$(Object obj)`
+  - `hashCode()` → `hashCode$()`
+  - `toString()` → `toString$()`
+- This prevents compilation conflicts with inherited Object methods
+- Apply this rule when Salesforce documentation shows these method names
+
 ### Class Structure Patterns
 
 #### Static Method Classes
@@ -74,7 +83,8 @@ public class InstanceClass {
 ### Documentation Adherence Rules
 
 - **Method/property order**: Maintain alphabetical order as documented in Salesforce API docs
-- **Getters/setters**: Only create methods explicitly documented; do not auto-generate
+- **⚠️ CRITICAL: Getters/setters**: NEVER auto-generate getter/setter methods. ONLY create methods that are explicitly documented in the Salesforce API documentation. Properties are public fields unless documentation shows otherwise.
+- **⚠️ CRITICAL: Methods only**: Create ONLY the methods that appear in the official Salesforce documentation. Do not add any convenience methods, utility methods, or standard Java patterns not documented.
 - **Constructor patterns**: Static method classes have no constructors; instance classes have public default constructor plus any documented constructors
 - **Copyright year**: Use current year (2025) for newly created files
 
@@ -100,10 +110,32 @@ mvn install -Dgpg.skip=true  # Skip GPG signing for local builds
 
 ### Accessing Salesforce Documentation
 
-When working with Apex class reference pages, use **Playwright MCP** to access the content since the Salesforce documentation pages cannot be fetched directly. Use the browser tools to navigate to and extract information from:
+When working with Apex reference pages, use **Playwright MCP** to access the content since the Salesforce documentation pages cannot be fetched directly. Use the browser tools to navigate to and extract information from:
 
 - `https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/` - Main Apex Reference documentation
 - Specific class documentation pages for method signatures, constructors, and property definitions
+
+### Implementing Namespaces
+
+Use **Playwright MCP** to access the namespace documentation page (e.g., `apex_namespace_[namespace].htm`) since Salesforce docs cannot be fetched directly. Extract all type names and their documentation links. Types can then be added systematically using the links and checked off.
+
+Create `.github/[namespace-name]-todo.md` with a simple structure:
+
+```markdown
+# [Namespace] TODO List
+
+## Classes
+
+- [ ] **TypeName** - [Documentation](link)
+
+## Interfaces
+
+- [ ] **TypeName** - [Documentation](link)
+
+## Enums
+
+- [ ] **TypeName** - [Documentation](link)
+```
 
 ### Adding New Salesforce Types
 
@@ -115,9 +147,10 @@ When working with Apex class reference pages, use **Playwright MCP** to access t
    - Instance classes: Public default constructor + documented constructors
 5. **Import only `com.nawforce.runforce.*` types** (except `Object`)
 6. **Add `@SuppressWarnings("unused")` annotation**
-7. **Create only documented methods** - no auto-generated getters/setters
+7. **⚠️ CRITICAL: Create only documented methods** - NEVER create getter/setter methods or any other methods not explicitly shown in the Salesforce documentation. Only public fields and documented methods.
 8. **Add documentation link** - include comment above class: `// https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/[class-doc-page].htm`
-9. **Verify compilation** with `mvn compile`
+9. **Do not create types without documentation** - If you encounter a referenced type that doesn't exist, do not attempt to create it without access to its official Salesforce documentation page. Ask for the documentation link if necessary.
+10. **Verify compilation** with `mvn compile`
 
 ### Updating Existing Classes
 
@@ -125,7 +158,8 @@ When working with Apex class reference pages, use **Playwright MCP** to access t
 2. **Follow alphabetical insertion** for new methods per API documentation
 3. **Preserve existing constructor patterns** (static vs instance class style)
 4. **Add documentation link** if not already present - include comment above class with Salesforce documentation URL
-5. **Validate with compilation** after changes
+5. **⚠️ CRITICAL: Do not create types without documentation** - If you encounter a referenced type that doesn't exist, do not attempt to create it without access to its official Salesforce documentation page. Ask for the documentation link if necessary.
+6. **Validate with compilation** after changes
 
 ### Cross-Package Dependencies
 
