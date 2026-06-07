@@ -25,6 +25,7 @@ public class LeadConvertResult {
 	public List<Error> Errors;
 	public Id LeadId;
 	public Id OpportunityId;
+	public Id RelatedPersonAccountId;
 	public Boolean Success;
 
 	public Id getAccountId() {throw new java.lang.UnsupportedOperationException();}
@@ -32,5 +33,6 @@ public class LeadConvertResult {
 	public List<Error> getErrors() {throw new java.lang.UnsupportedOperationException();}
 	public Id getLeadId() {throw new java.lang.UnsupportedOperationException();}
 	public Id getOpportunityId() {throw new java.lang.UnsupportedOperationException();}
+	public Id getRelatedPersonAccountId() {throw new java.lang.UnsupportedOperationException();}
 	public Boolean isSuccess() {throw new java.lang.UnsupportedOperationException();}
 }

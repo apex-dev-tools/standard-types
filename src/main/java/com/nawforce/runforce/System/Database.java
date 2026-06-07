@@ -73,9 +73,12 @@ public class Database {
 	public static SaveResult getAsyncSaveResult(SaveResult saveResult) {throw new java.lang.UnsupportedOperationException();}
 	public static SaveResult getAsyncSaveResult(String asyncLocator) {throw new java.lang.UnsupportedOperationException();}
 	public static Cursor getCursor(String query) {throw new java.lang.UnsupportedOperationException();}
-	public static Cursor getCursor(String query, Object accessLevel) {throw new java.lang.UnsupportedOperationException();}
-	public static Cursor getCursorWithBinds(String query, Map<String, Object> bindMap, Object accessLevel) {throw new java.lang.UnsupportedOperationException();}
+	public static Cursor getCursor(String query, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}
+	public static Cursor getCursorWithBinds(String query, Map<String, Object> bindMap, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}
 	public static GetDeletedResult getDeleted(String sobjectType, Datetime startDate, Datetime endDate) {throw new java.lang.UnsupportedOperationException();}
+	public static PaginationCursor getPaginationCursor(String query) {throw new java.lang.UnsupportedOperationException();}
+	public static PaginationCursor getPaginationCursor(String query, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}
+	public static PaginationCursor getPaginationCursorWithBinds(String query, Map<String, Object> bindMap, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}
 	public static QueryLocator getQueryLocator(List<SObject> query) {throw new java.lang.UnsupportedOperationException();}
 	public static QueryLocator getQueryLocator(List<SObject> query, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}
 	public static QueryLocator getQueryLocator(String query) {throw new java.lang.UnsupportedOperationException();}
