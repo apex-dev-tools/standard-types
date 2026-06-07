@@ -18,8 +18,14 @@ package com.nawforce.runforce.System;
 public class Limits {
   public static Integer getAggregateQueries() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitAggregateQueries() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getApexCursors() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getLimitApexCursors() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getApexCursorRows() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitApexCursorRows() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getApexPaginationCursors() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getLimitApexPaginationCursors() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getApexPaginationCursorRows() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getLimitApexPaginationCursorRows() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getFetchCallsOnApexCursor() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitFetchCallsOnApexCursor() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getAsyncCalls() {throw new java.lang.UnsupportedOperationException();}
@@ -83,4 +89,3 @@ public class Limits {
   public static Integer getScriptStatements() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitScriptStatements() {throw new java.lang.UnsupportedOperationException();}
 }
-
