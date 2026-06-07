@@ -12,4 +12,6 @@ public class SaleNotification extends BaseNotification {
   public SaleNotification() {throw new java.lang.UnsupportedOperationException();}
 
   public void setGatewayAvsCode(String gatewayAvsCode) {throw new java.lang.UnsupportedOperationException();}
+  public void setRetryCategory(RetryCategory retryCategory) {throw new java.lang.UnsupportedOperationException();}
+  public void setRetryDecision(RetryDecision retryDecision) {throw new java.lang.UnsupportedOperationException();}
 }

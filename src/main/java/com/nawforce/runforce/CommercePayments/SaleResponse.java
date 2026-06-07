@@ -24,5 +24,7 @@ public class SaleResponse extends AbstractTransactionResponse implements Gateway
   public void setGatewayResultCode(String gatewayResultCode) {throw new java.lang.UnsupportedOperationException();}
   public void setGatewayResultCodeDescription(String gatewayResultCodeDescription) {throw new java.lang.UnsupportedOperationException();}
   public void setPaymentMethodTokenizationResponse(PaymentMethodTokenizationResponse paymentMethodTokenizationResponse) {throw new java.lang.UnsupportedOperationException();}
+  public void setRetryCategory(RetryCategory retryCategory) {throw new java.lang.UnsupportedOperationException();}
+  public void setRetryDecision(RetryDecision retryDecision) {throw new java.lang.UnsupportedOperationException();}
   public void setSalesforceResultCodeInfo(SalesforceResultCodeInfo salesforceResultCodeInfo) {throw new java.lang.UnsupportedOperationException();}
 }

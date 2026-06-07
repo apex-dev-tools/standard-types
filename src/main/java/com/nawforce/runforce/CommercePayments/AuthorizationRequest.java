@@ -5,6 +5,7 @@
 package com.nawforce.runforce.CommercePayments;
 
 import com.nawforce.runforce.System.Double;
+import com.nawforce.runforce.System.Map;
 import com.nawforce.runforce.System.String;
 import com.nawforce.runforce.System.Boolean;
 import com.nawforce.runforce.System.Integer;
@@ -17,6 +18,7 @@ public class AuthorizationRequest extends BaseRequest {
   public String comments;
   public String currencyIsoCode;
   public AuthApiPaymentMethodRequest paymentMethod;
+  public Map<String,String> paymentMethodData;
 
   public AuthorizationRequest() {throw new java.lang.UnsupportedOperationException();}
   public AuthorizationRequest(Double amount) {throw new java.lang.UnsupportedOperationException();}

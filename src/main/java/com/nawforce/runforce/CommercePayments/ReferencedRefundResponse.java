@@ -7,6 +7,7 @@ package com.nawforce.runforce.CommercePayments;
 import com.nawforce.runforce.System.Datetime;
 import com.nawforce.runforce.System.Double;
 import com.nawforce.runforce.System.String;
+import com.nawforce.runforce.System.Boolean;
 
 // https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_commercepayments_ReferencedRefundResponse.htm
 @SuppressWarnings("unused")
@@ -14,6 +15,7 @@ public class ReferencedRefundResponse extends AbstractTransactionResponse implem
   public ReferencedRefundResponse() {throw new java.lang.UnsupportedOperationException();}
 
   public void setAmount(Double amount) {throw new java.lang.UnsupportedOperationException();}
+  public void setAsync(Boolean async) {throw new java.lang.UnsupportedOperationException();}
   public void setGatewayAvsCode(String gatewayAvsCode) {throw new java.lang.UnsupportedOperationException();}
   public void setGatewayDate(Datetime gatewayDate) {throw new java.lang.UnsupportedOperationException();}
   public void setGatewayMessage(String gatewayMessage) {throw new java.lang.UnsupportedOperationException();}
