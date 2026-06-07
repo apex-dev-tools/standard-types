@@ -119,6 +119,7 @@ public class String {
 	public String substringBetween(String open, String close) {throw new java.lang.UnsupportedOperationException();}
 	public String substringBetween(String tag) {throw new java.lang.UnsupportedOperationException();}
 	public String swapCase() {throw new java.lang.UnsupportedOperationException();}
+	public String template(Map<String, Object> values) {throw new java.lang.UnsupportedOperationException();}
 	public String toLowerCase() {throw new java.lang.UnsupportedOperationException();}
 	public String toLowerCase(String locale) {throw new java.lang.UnsupportedOperationException();}
 	public String toUpperCase() {throw new java.lang.UnsupportedOperationException();}
