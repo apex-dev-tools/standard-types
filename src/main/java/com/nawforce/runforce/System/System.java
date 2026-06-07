@@ -44,6 +44,7 @@ public class System {
 	public static void pauseJobByName(String jobName) {throw new java.lang.UnsupportedOperationException();}
 	public static List<Id> process(List<Id> workitemIds, String action, String comments, String nextApprover) {throw new java.lang.UnsupportedOperationException();}
 	public static Integer purgeOldAsyncJobs(Date date) {throw new java.lang.UnsupportedOperationException();}
+	public static Integer purgeOldAsyncJobs(Date date, Integer numOfJobs) {throw new java.lang.UnsupportedOperationException();}
 	public static Version requestVersion() {throw new java.lang.UnsupportedOperationException();}
 	public static ResetPasswordResult resetPassword(Id userId, Boolean sendUserEmail) {throw new java.lang.UnsupportedOperationException();}
 	public static ResetPasswordResult resetPasswordWithEmailTemplate(Id userId, Boolean sendUserEmail, String emailTemplateName) {throw new java.lang.UnsupportedOperationException();}
