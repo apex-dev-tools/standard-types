@@ -17,8 +17,11 @@ public class SaleRequest extends BaseRequest {
   public Double amount;
   public String comments;
   public String currencyIsoCode;
+  public EnhancedPaymentDataInput enhancedPaymentData;
+  public String paymentInitiationSourceId;
   public SaleApiPaymentMethodRequest paymentMethod;
   public Map<String,String> paymentMethodData;
+  public Boolean submittedByMerchant;
 
   public SaleRequest() {throw new java.lang.UnsupportedOperationException();}
   public SaleRequest(Double amount) {throw new java.lang.UnsupportedOperationException();}

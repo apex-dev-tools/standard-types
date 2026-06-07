@@ -14,6 +14,7 @@ public class ReferencedRefundNotification extends BaseNotification {
 
   public ReferencedRefundNotification() {throw new java.lang.UnsupportedOperationException();}
   public void setAmount(Double amount) {throw new java.lang.UnsupportedOperationException();}
+  public void setGatewayAvsCode(String gatewayAvsCode) {throw new java.lang.UnsupportedOperationException();}
   public void setGatewayDate(Datetime gatewayDate) {throw new java.lang.UnsupportedOperationException();}
   public void setGatewayMessage(String gatewayMessage) {throw new java.lang.UnsupportedOperationException();}
   public void setGatewayReferenceDetails(String gatewayReferenceDetails) {throw new java.lang.UnsupportedOperationException();}

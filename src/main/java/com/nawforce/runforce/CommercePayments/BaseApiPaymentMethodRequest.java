@@ -13,6 +13,7 @@ import com.nawforce.runforce.System.String;
 public abstract class BaseApiPaymentMethodRequest {
   public AddressRequest address;
   public String id;
+  public PaymentMethodIdType idType;
   public Boolean saveForFuture;
 
   public BaseApiPaymentMethodRequest() {throw new java.lang.UnsupportedOperationException();}

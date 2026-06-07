@@ -17,5 +17,7 @@ public abstract class AbstractResponse implements GatewayResponse {
   public void setGatewayMessage(String gatewayMessage) {throw new java.lang.UnsupportedOperationException();}
   public void setGatewayResultCode(String gatewayResultCode) {throw new java.lang.UnsupportedOperationException();}
   public void setGatewayResultCodeDescription(String gatewayResultCodeDescription) {throw new java.lang.UnsupportedOperationException();}
+  public void setRetryCategory(RetryCategory retryCategory) {throw new java.lang.UnsupportedOperationException();}
+  public void setRetryDecision(RetryDecision retryDecision) {throw new java.lang.UnsupportedOperationException();}
   public void setSalesforceResultCodeInfo(SalesforceResultCodeInfo salesforceResultCodeInfo) {throw new java.lang.UnsupportedOperationException();}
 }

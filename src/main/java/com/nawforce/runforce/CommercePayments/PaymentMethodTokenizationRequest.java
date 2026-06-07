@@ -14,6 +14,7 @@ public class PaymentMethodTokenizationRequest {
   public AddressRequest address;
   public BankPaymentMethodRequest bankPaymentMethod;
   public CardPaymentMethodRequest cardPaymentMethod;
+  public Boolean savedByMerchant;
 
   public PaymentMethodTokenizationRequest() {throw new java.lang.UnsupportedOperationException();}
   public PaymentMethodTokenizationRequest(String paymentGatewayId) {throw new java.lang.UnsupportedOperationException();}
