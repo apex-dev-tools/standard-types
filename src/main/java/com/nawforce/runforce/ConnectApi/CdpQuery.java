@@ -13,6 +13,9 @@ import com.nawforce.runforce.System.String;
 public class CdpQuery {
   public static CdpQueryMetadataOutput getAllMetadata() {throw new java.lang.UnsupportedOperationException();}
   public static CdpQueryMetadataOutput getAllMetadata(String entityType, String entityCategory, String entityName) {throw new java.lang.UnsupportedOperationException();}
+  public static MetadataEntityCollectionRepresentation getMetadataEntities() {throw new java.lang.UnsupportedOperationException();}
+  public static MetadataEntityCollectionRepresentation getMetadataEntities(String entityCategory, String entityType) {throw new java.lang.UnsupportedOperationException();}
+  public static MetadataEntityCollectionRepresentation getMetadataEntities(String entityCategory, String entityType, String dataspace) {throw new java.lang.UnsupportedOperationException();}
   public static CdpQueryMetadataOutput getInsightsMetadata() {throw new java.lang.UnsupportedOperationException();}
   public static CdpQueryMetadataOutput getInsightsMetadata(String ciName) {throw new java.lang.UnsupportedOperationException();}
   public static CdpQueryMetadataOutput getProfileMetadata() {throw new java.lang.UnsupportedOperationException();}
