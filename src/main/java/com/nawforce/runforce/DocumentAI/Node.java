@@ -1,0 +1,32 @@
+/*
+ * Copyright (c) 2026 Certinia Inc. All rights reserved.
+ */
+
+package com.nawforce.runforce.DocumentAI;
+
+import com.nawforce.runforce.System.Boolean;
+import com.nawforce.runforce.System.Double;
+import com.nawforce.runforce.System.Integer;
+import com.nawforce.runforce.System.List;
+import com.nawforce.runforce.System.Map;
+import com.nawforce.runforce.System.String;
+
+@SuppressWarnings("unused")
+public class Node {
+  public List<Attribute> attributes;
+  public List<Node> children;
+  public Double confidence;
+  public Map<String,Object> data;
+  public List<Error> errors;
+  public String id;
+  public String label;
+  public List<MatchingRecord> matchingRecords;
+  public String type;
+  public String value;
+
+  public Node() {throw new java.lang.UnsupportedOperationException();}
+
+  public Boolean equals$(Object obj) {throw new java.lang.UnsupportedOperationException();}
+  public Integer hashCode$() {throw new java.lang.UnsupportedOperationException();}
+  public String toString$() {throw new java.lang.UnsupportedOperationException();}
+}
