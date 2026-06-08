@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2025 Certinia Inc. All rights reserved.
+ */
+
+package com.nawforce.runforce.ConnectApi;
+
+import com.nawforce.runforce.System.Boolean;
+import com.nawforce.runforce.System.Double;
+import com.nawforce.runforce.System.Integer;
+import com.nawforce.runforce.System.List;
+import com.nawforce.runforce.System.String;
+
+@SuppressWarnings("unused")
+public class PicklistValue {
+  public AbstractPicklistValueAttributes attributes;
+  public String label;
+  public List<Integer> validFor;
+  public String value;
+
+  public PicklistValue() {throw new java.lang.UnsupportedOperationException();}
+
+  public Boolean equals$(Object obj) {throw new java.lang.UnsupportedOperationException();}
+  public Double getBuildVersion() {throw new java.lang.UnsupportedOperationException();}
+  public Integer hashCode$() {throw new java.lang.UnsupportedOperationException();}
+  public String toString$() {throw new java.lang.UnsupportedOperationException();}
+}
