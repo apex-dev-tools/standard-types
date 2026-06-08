@@ -23,4 +23,8 @@ public class EventBus {
   public static SaveResult publish(SObject sobject) {throw new java.lang.UnsupportedOperationException();}
   public static List<SaveResult> publish(List<SObject> sobjects, Object cb) {throw new java.lang.UnsupportedOperationException();}
   public static SaveResult publish(SObject sobject, Object cb) {throw new java.lang.UnsupportedOperationException();}
+  public static List<SaveResult> publishWithAccessLevel(List<SObject> sobjects, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}
+  public static SaveResult publishWithAccessLevel(SObject sobject, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}
+  public static List<SaveResult> publishWithAccessLevel(List<SObject> sobjects, Object cb, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}
+  public static SaveResult publishWithAccessLevel(SObject sobject, Object cb, AccessLevel accessLevel) {throw new java.lang.UnsupportedOperationException();}
 }
