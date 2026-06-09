@@ -1,0 +1,31 @@
+/*
+ Copyright (c) 2026 Kevin Jones, All rights reserved.
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. The name of the author may not be used to endorse or promote products
+    derived from this software without specific prior written permission.
+ */
+
+package io.github.apexdevtools.standardtypes.Database;
+
+import io.github.apexdevtools.standardtypes.System.Boolean;
+import io.github.apexdevtools.standardtypes.System.Integer;
+import io.github.apexdevtools.standardtypes.System.List;
+import io.github.apexdevtools.standardtypes.System.SObject;
+
+@SuppressWarnings("unused")
+public class CursorFetchResult {
+
+  public CursorFetchResult() {throw new java.lang.UnsupportedOperationException();}
+
+  public Integer getNextIndex() {throw new java.lang.UnsupportedOperationException();}
+  public Integer getNumDeletedRecords() {throw new java.lang.UnsupportedOperationException();}
+  public List<SObject> getRecords() {throw new java.lang.UnsupportedOperationException();}
+  public Boolean isDone() {throw new java.lang.UnsupportedOperationException();}
+}
