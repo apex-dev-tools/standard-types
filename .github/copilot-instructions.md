@@ -8,9 +8,9 @@ This repository provides Java stub declarations for Salesforce platform types to
 
 ### Core Namespace Pattern
 
-- **Root package**: `com.nawforce.runforce`
-- **Namespace mapping**: Each Salesforce namespace becomes a Java package (e.g., `System` → `com.nawforce.runforce.System`)
-- **Cross-references**: Types reference each other using proper `com.nawforce.runforce.*` imports, never native Java types (except `Object`)
+- **Root package**: `io.github.apexdevtools.standardtypes`
+- **Namespace mapping**: Each Salesforce namespace becomes a Java package (e.g., `System` → `io.github.apexdevtools.standardtypes.System`)
+- **Cross-references**: Types reference each other using proper `io.github.apexdevtools.standardtypes.*` imports, never native Java types (except `Object`)
 
 ### Key Package Categories
 
@@ -37,9 +37,9 @@ public class ExampleClass {
 
 ### Type Import Rules ⚠️
 
-- **ALWAYS use** `com.nawforce.runforce.System.String` (not `java.lang.String`)
-- **ALWAYS use** `com.nawforce.runforce.System.Integer` (not `java.lang.Integer`)
-- **ALWAYS use** `com.nawforce.runforce.System.List` (not `java.util.List`)
+- **ALWAYS use** `io.github.apexdevtools.standardtypes.System.String` (not `java.lang.String`)
+- **ALWAYS use** `io.github.apexdevtools.standardtypes.System.Integer` (not `java.lang.Integer`)
+- **ALWAYS use** `io.github.apexdevtools.standardtypes.System.List` (not `java.util.List`)
 - **ONLY exception**: `Object` can reference native Java type
 
 ### Method Name Collision Rules ⚠️
@@ -145,7 +145,7 @@ Create `.github/[namespace-name]-todo.md` with a simple structure:
 4. **Choose class pattern**:
    - Static method classes: No constructors
    - Instance classes: Public default constructor + documented constructors
-5. **Import only `com.nawforce.runforce.*` types** (except `Object`)
+5. **Import only `io.github.apexdevtools.standardtypes.*` types** (except `Object`)
 6. **Add `@SuppressWarnings("unused")` annotation**
 7. **⚠️ CRITICAL: Create only documented methods** - NEVER create getter/setter methods or any other methods not explicitly shown in the Salesforce documentation. Only public fields and documented methods.
 8. **Add documentation link** - include comment above class: `// https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/[class-doc-page].htm`
@@ -167,8 +167,8 @@ When types reference each other across packages, always use full package imports
 
 ```java
 // In ConnectApi package referencing System types
-import com.nawforce.runforce.System.String;
-import com.nawforce.runforce.System.List;
+import io.github.apexdevtools.standardtypes.System.String;
+import io.github.apexdevtools.standardtypes.System.List;
 ```
 
 ### Static Analysis Integration

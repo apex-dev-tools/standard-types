@@ -1,0 +1,56 @@
+/*
+ * Copyright (c) 2024 Certinia Inc. All rights reserved.
+ */
+
+package io.github.apexdevtools.standardtypes.DataSource;
+
+import io.github.apexdevtools.standardtypes.System.*;
+import io.github.apexdevtools.standardtypes.System.Boolean;
+import io.github.apexdevtools.standardtypes.System.Integer;
+import io.github.apexdevtools.standardtypes.System.String;
+
+@SuppressWarnings("unused")
+public class Column extends DataSourceUtil {
+  public Integer decimalPlaces;
+  public String description;
+  public Boolean filterable;
+  public Boolean isPicklistAlphabeticallySorted;
+  public Boolean isPicklistRestricted;
+  public String label;
+  public Integer length;
+  public String name;
+  public List<Map<String,String>> picklistValues;
+  public String referenceTargetField;
+  public String referenceTo;
+  public Boolean sortable;
+  public DataType type;
+
+  public Column() {throw new java.lang.UnsupportedOperationException();}
+
+  public static Column $boolean(String name) {throw new java.lang.UnsupportedOperationException();}
+  public static Column currency(String name, Integer length, Integer decimalPlaces) {throw new java.lang.UnsupportedOperationException();}
+  public static Column date(String name) {throw new java.lang.UnsupportedOperationException();}
+  public static Column datetime(String name) {throw new java.lang.UnsupportedOperationException();}
+  public static Column email(String name) {throw new java.lang.UnsupportedOperationException();}
+  public static Column externalLookup(String name, String domain) {throw new java.lang.UnsupportedOperationException();}
+  public static Column get(String name, String label, String description, Boolean isSortable, Boolean isFilterable, DataType type, Integer length, Integer decimalPlaces, String referenceTo, String referenceTargetField, Object picklistValuesObj, Boolean isPicklistAlphabeticallySorted, Boolean isPicklistRestricted) {throw new java.lang.UnsupportedOperationException();}
+  public static Column get(String name, String label, String description, Boolean isSortable, Boolean isFilterable, DataType type, Integer length, Integer decimalPlaces, String referenceTo, String referenceTargetField) {throw new java.lang.UnsupportedOperationException();}
+  public static Column get(String name, String label, String description, Boolean isSortable, Boolean isFilterable, DataType type, Integer length, Integer decimalPlaces) {throw new java.lang.UnsupportedOperationException();}
+  public static Column get(String name, String label, String description, Boolean isSortable, Boolean isFilterable, DataType type, Integer length) {throw new java.lang.UnsupportedOperationException();}
+  public static Column indirectLookup(String name, String domain, String targetField) {throw new java.lang.UnsupportedOperationException();}
+  public static Column integer(String name, Integer length) {throw new java.lang.UnsupportedOperationException();}
+  public static Column lookup(String name, String domain) {throw new java.lang.UnsupportedOperationException();}
+  public static Column multipicklist(String name, List<Map<String,String>> picklistValues, Boolean isPicklistAlphabeticallySorted, Boolean isPicklistRestricted) {throw new java.lang.UnsupportedOperationException();}
+  public static Column multipicklist(String name, List<Map<String,String>> picklistValues) {throw new java.lang.UnsupportedOperationException();}
+  public static Column number(String name, Integer length, Integer decimalPlaces) {throw new java.lang.UnsupportedOperationException();}
+  public static Column percent(String name, Integer length, Integer decimalPlaces) {throw new java.lang.UnsupportedOperationException();}
+  public static Column phone(String name) {throw new java.lang.UnsupportedOperationException();}
+  public static Column picklist(String name, List<Map<String,String>> picklistValues, Boolean isPicklistAlphabeticallySorted, Boolean isPicklistRestricted) {throw new java.lang.UnsupportedOperationException();}
+  public static Column picklist(String name, List<Map<String,String>> picklistValues) {throw new java.lang.UnsupportedOperationException();}
+  public static Column text(String name, String label, Integer length) {throw new java.lang.UnsupportedOperationException();}
+  public static Column text(String name, Integer length) {throw new java.lang.UnsupportedOperationException();}
+  public static Column text(String name) {throw new java.lang.UnsupportedOperationException();}
+  public static Column textarea(String name) {throw new java.lang.UnsupportedOperationException();}
+  public static Column url(String name, Integer length) {throw new java.lang.UnsupportedOperationException();}
+  public static Column url(String name) {throw new java.lang.UnsupportedOperationException();}
+}
