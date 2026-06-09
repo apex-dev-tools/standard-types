@@ -6,6 +6,25 @@ These stub declarations help support static analysis of Apex code in [apex-ls](h
 
 The library is versioned to reflect Salesforce API numbers, so currently v65.X.X matches the Salesforce Winter '26 API.
 
+## Coverage Scope
+
+This project covers Salesforce platform types that are useful for Apex static analysis, especially for the expected
+usage of [apex-ls](https://github.com/apex-dev-tools/apex-ls). It does not aim to mirror every industry or product
+namespace that Salesforce exposes.
+
+Some Salesforce namespaces are intentionally excluded when they are product-specific and have no expected relevance to
+the current tooling use cases. Known exclusions include:
+
+- `hlthcrbilling`
+- `runtime_industries_insurance`
+- `IssueCreditMemo`
+- `RulesAppln`
+- `renew_assets_summary`
+
+The Revenue/Billing exclusions do not mean every commerce, quote, payment, or revenue-related type is out of scope.
+Existing covered namespaces such as `CommercePayments`, `CommerceOrders`, `PlaceQuote`, `RevSalesTrxn`, `RevSignaling`,
+and related `ConnectApi` commerce types remain supported where they are already useful to the analyzer.
+
 ## Installation
 
 To use the jar in a maven project add the following to your pom.xml
