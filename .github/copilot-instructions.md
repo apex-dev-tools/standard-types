@@ -10,7 +10,7 @@ This repository provides Java stub declarations for Salesforce platform types to
 
 - **Root package**: `io.github.apexdevtools.standardtypes`
 - **Namespace mapping**: Each Salesforce namespace becomes a Java package (e.g., `System` → `io.github.apexdevtools.standardtypes.System`)
-- **Cross-references**: Types reference each other using proper `io.github.apexdevtools.standardtypes.*` imports, never native Java types (except `Object`)
+- **Cross-references**: Types reference each other using proper `io.github.apexdevtools.standardtypes.*` imports, never native Java types. Permitted native Java types are limited to `Object`, `Exception` (exception stubs extend it and take it as a parameter), and `java.lang.UnsupportedOperationException` (thrown by every method body)
 
 ### Key Package Categories
 
@@ -25,15 +25,33 @@ This repository provides Java stub declarations for Salesforce platform types to
 
 ### Stub Implementation Pattern
 
-Every method follows this exact pattern:
+Every file starts with the standard BSD-style copyright header (see below), followed by the package, an optional documentation-link comment, and the class. Every method throws `UnsupportedOperationException`:
 
 ```java
+/*
+ Copyright (c) <current year> Kevin Jones, All rights reserved.
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. The name of the author may not be used to endorse or promote products
+    derived from this software without specific prior written permission.
+ */
+
+package io.github.apexdevtools.standardtypes.<Namespace>;
+
 // [link to class documentation page]
 @SuppressWarnings("unused")
 public class ExampleClass {
   public ReturnType methodName(ParamType param) {throw new java.lang.UnsupportedOperationException();}
 }
 ```
+
+Copy the header verbatim from an existing file in the same namespace (e.g. `System/MathException.java`), updating only the year.
 
 ### Type Import Rules ⚠️
 
@@ -86,7 +104,7 @@ public class InstanceClass {
 - **⚠️ CRITICAL: Getters/setters**: NEVER auto-generate getter/setter methods. ONLY create methods that are explicitly documented in the Salesforce API documentation. Properties are public fields unless documentation shows otherwise.
 - **⚠️ CRITICAL: Methods only**: Create ONLY the methods that appear in the official Salesforce documentation. Do not add any convenience methods, utility methods, or standard Java patterns not documented.
 - **Constructor patterns**: Static method classes have no constructors; instance classes have public default constructor plus any documented constructors
-- **Copyright year**: Use current year (2025) for newly created files
+- **Copyright year**: Use the current calendar year in the header of newly created files
 
 ## Build & Development
 
@@ -98,7 +116,7 @@ mvn install -Dgpg.skip=true  # Skip GPG signing for local builds
 
 ### Version Strategy
 
-- Versions track Salesforce API releases (e.g., v64.X.X = Summer '25 API)
+- Versions track Salesforce API releases (e.g., v67.X.X = Summer '26 API)
 - Built for Java 1.8 compatibility for wider tooling support
 
 ### File Organization
@@ -140,7 +158,7 @@ Create `.github/[namespace-name]-todo.md` with a simple structure:
 ### Adding New Salesforce Types
 
 1. **Determine package location** based on Salesforce namespace mapping
-2. **Set copyright year** to current year (2025) for new files
+2. **Add the copyright header** (copy from an existing file in the namespace) and set the year to the current calendar year
 3. **Preserve documentation order** - maintain alphabetical method/property order from API docs
 4. **Choose class pattern**:
    - Static method classes: No constructors
