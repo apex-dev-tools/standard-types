@@ -9,6 +9,7 @@ import io.github.apexdevtools.standardtypes.System.String;
 
 @SuppressWarnings("unused")
 public class ManagedContentSpaces {
+  public static ManagedContentSpaceDeleteRepresentation deleteManagedContentSpace(String contentSpaceId) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentSpace getManagedContentSpace(String contentSpaceId) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentSpaceChannelsRepresentation getManagedContentSpaceChannels(String contentSpaceId, Integer pageParam, Integer pageSize) {throw new UnsupportedOperationException();}
   public static ManagedContentSpaceCollectionRepresentation getManagedContentSpaces(Integer pageParam, Integer pageSize, String nameFragment) {throw new java.lang.UnsupportedOperationException();}

@@ -35,6 +35,12 @@ public class Limits {
   public static Integer getLimitCallouts() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getCpuTime() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitCpuTime() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getDataCloudCursors() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getLimitDataCloudCursors() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getDataCloudCursorRows() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getLimitDataCloudCursorRows() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getDataCloudFlexCredits() {throw new java.lang.UnsupportedOperationException();}
+  public static Integer getLimitDataCloudFlexCredits() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getDmlRows() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getLimitDmlRows() {throw new java.lang.UnsupportedOperationException();}
   public static Integer getDmlStatements() {throw new java.lang.UnsupportedOperationException();}
