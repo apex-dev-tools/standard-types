@@ -16,8 +16,10 @@ public class ManagedContent {
   public static ManagedContentDocument createManagedContent(ManagedContentDocumentInput ManagedContentInputParam) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentProviderInstance createManagedContentProvider(ManagedContentProviderInstanceInput providerInstanceInput) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentDocument createManagedContentWithMedia(ManagedContentDocumentInput ManagedContentInputParam, BinaryInput contentData) {throw new java.lang.UnsupportedOperationException();}
+  public static ManagedContentItemsDeleteOutput deleteContents(String contentSpaceId, ManagedContentItemsDeleteInput ManagedContentItemsDeleteInputParam) {throw new java.lang.UnsupportedOperationException();}
   public static void deleteManagedContentProviderInstance(String providerInstanceId) {throw new java.lang.UnsupportedOperationException();}
   public static void deleteManagedContentVariant(String variantId) {throw new java.lang.UnsupportedOperationException();}
+  public static ManagedContentMetadataCollection exposeContentsAsMetadata(ManagedContentMetadataCollectionInput input) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVersionCollection getAllContent(String channelId, Integer pageParam, Integer pageSize, String language, String managedContentType, Boolean includeMetadata, String startDate, String endDate) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVersionCollection getAllContent(String channelId, Integer pageParam, Integer pageSize, String language, String managedContentType, Boolean includeMetadata, String startDate, String endDate, Boolean showAbsoluteUrl) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentChannelCollection getAllDeliveryChannels(Integer pageParam, Integer pageSize) {throw new UnsupportedOperationException();}
@@ -26,6 +28,7 @@ public class ManagedContent {
   public static ManagedContentVersionCollection getContentByContentKeys(String channelId, List<String> contentKeys, Integer pageParam, Integer pageSize, String language, String managedContentType, Boolean includeMetadata, String startDate, String endDate, Boolean showAbsoluteUrl) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVersionCollection getContentByIds(String channelId, List<String> managedContentIds, Integer pageParam, Integer pageSize, String language, String managedContentType, Boolean includeMetadata, String startDate, String endDate) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVersionCollection getContentByIds(String channelId, List<String> managedContentIds, Integer pageParam, Integer pageSize, String language, String managedContentType, Boolean includeMetadata, String startDate, String endDate, Boolean showAbsoluteUrl) {throw new java.lang.UnsupportedOperationException();}
+  public static ManagedContentJob getContentJob(String jobId) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVersionCollection getManagedContentByContentKeys(String communityId, List<String> contentKeys, Integer pageParam, Integer pageSize, String language, String managedContentType, Boolean showAbsoluteUrl) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVersionCollection getManagedContentByIds(String communityId, List<String> managedContentIds, Integer pageParam, Integer pageSize, String language, String managedContentType) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVersionCollection getManagedContentByIds(String communityId, List<String> managedContentIds, Integer pageParam, Integer pageSize, String language, String managedContentType, Boolean showAbsoluteUrl) {throw new java.lang.UnsupportedOperationException();}
@@ -35,6 +38,7 @@ public class ManagedContent {
   public static ManagedContentVersionCollection getManagedContentByTopicsAndIds(String communityId, List<String> managedContentIds, List<String> topics, Integer pageParam, Integer pageSize, String language, String managedContentType) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentVersionCollection getManagedContentByTopicsAndIds(String communityId, List<String> managedContentIds, List<String> topics, Integer pageParam, Integer pageSize, String language, String managedContentType, Boolean showAbsoluteUrl) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentProviderCollection getManagedContentProviders() {throw new java.lang.UnsupportedOperationException();}
+  public static ManagedContentDocument getManagedContentSingleItemContent(String contentSpaceId, String contentTypeFQN) {throw new java.lang.UnsupportedOperationException();}
   public static ManagedContentSpace getManagedContentSpace(String contentSpaceId) {throw new java.lang.UnsupportedOperationException();}
   public static MCSFolderShareCollection getMCSFolderShares(String folderId) {throw new java.lang.UnsupportedOperationException();}
   public static MCSFolderShareTargetCollection getMCSFolderShareTargets(String folderId) {throw new java.lang.UnsupportedOperationException();}
